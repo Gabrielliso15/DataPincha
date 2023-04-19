@@ -282,3 +282,449 @@ video{
 
 
 /* fin card del banner */
+
+/* -------------------------------------- */
+/* ------- MID - SEGUNDO MODULO  -------- */
+/* -------------------------------------- */
+
+
+
+.mid{
+    height: auto;
+    background-image: url(img/fondo.jpg);
+    background-blend-mode:soft-light;
+    background-size:cover;
+    background-color: rgba(20, 1, 1, 0.74);
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+.sec {
+    color: rgb(245, 243, 244);
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.432); 
+    text-align: center;
+}
+
+.sec h2{
+    font-size: 40px;
+    font-weight:550;
+    padding: 5px;
+}
+
+
+
+
+/* -------------------------------------- */
+/* ------------ CONTENEDOR 1 ------------ */
+/* -------------------------------------- */
+
+.cont.cont1{
+    padding: 15px;
+    height: 730px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px  350px  350px ;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6"
+    ;
+    grid-gap: 10px;
+    margin-bottom: 16px;
+}
+
+/* ------------ CONTENEDOR 1 IMG AND HOVER ------------ */
+
+.img{
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+}
+
+.img:hover{
+    transform: scale(1.04);
+    transition: all 0.3s;
+    box-shadow: 0 0 5px black;
+    cursor:pointer;
+    /* /* width: 300px;
+    opacity: 1; */
+    filter: contrast(120%); 
+
+}
+
+/* ------------ CONTENEDOR 1 IMG1 ------------ */
+
+.img1{
+    grid-area: img1;
+    background-image: url(img/noticia1.jpg);
+
+}
+
+
+.desc1{
+    height: 120px;
+    margin-top: 230px;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+
+
+.img1 h1{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+    font-weight: 500;
+}
+
+.img1 h3{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align:left;
+    font-size: 12px;
+    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+    font-weight: lighter;  
+    text-transform: uppercase;
+}
+
+.desc1 button{
+    background-color: rgba(255, 5, 9, 0.507);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* ------------ CONTENEDOR 1 IMG2 ------------ */
+
+.img2{
+    grid-area: img2;
+    background-image: url(img/noticia2.jpg);
+}
+
+.desc2{
+    height: 120px;
+    margin-top: 230px;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+
+
+.img2 h1{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+    font-weight: 500;
+}
+
+.img2 h3{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align:left;
+    font-size: 12px;
+    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+    font-weight: lighter;  
+    text-transform: uppercase;
+}
+
+.desc2 button{
+    background-color: rgba(255, 5, 9, 0.507);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+/* ------------ CONTENEDOR 1 IMG3 ------------ */
+
+.img3{
+    grid-area: img3;
+    background-image: url(img/noticia3.jpg);
+}
+
+.desc3{
+    height: 120px;
+    margin-top: 230px;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+
+
+.img3 h1{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+    font-weight: 500;
+}
+
+.img3 h3{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align:left;
+    font-size: 12px;
+    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+    font-weight: lighter;  
+    text-transform: uppercase;
+}
+
+.desc3 button{
+    background-color: rgba(255, 5, 9, 0.507);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+/* ------------ CONTENEDOR 1 IMG4 ------------ */
+
+.img4{
+    grid-area: img4;
+    background-image: url(img/noticia4.jpg);
+}
+
+.desc4{
+    height: 120px;
+    margin-top: 230px;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+
+
+.img4 h1{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+    font-weight: 500;
+}
+
+.img4 h3{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align:left;
+    font-size: 12px;
+    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+    font-weight: lighter;  
+    text-transform: uppercase;
+}
+
+.desc4 button{
+    background-color: rgba(255, 5, 9, 0.507);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+/* ------------ CONTENEDOR 1 IMG5 ------------ */
+
+.img5{
+    grid-area: img5;
+    background-image: url(img/noticia5.jpg);
+}
+
+.desc5{
+    height: 120px;
+    margin-top: 230px;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+
+
+.img5 h1{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+    font-weight: 500;
+}
+
+.img5 h3{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align:left;
+    font-size: 12px;
+    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+    font-weight: lighter;  
+    text-transform: uppercase;
+}
+
+.desc5 button{
+    background-color: rgba(255, 5, 9, 0.507);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* ------------ CONTENEDOR 1 IMG6 ------------ */
+
+.img6{
+    grid-area: img6;
+    background-image: url(img/noticia6.jpg);
+}
+
+.desc6{
+    height: 120px;
+    margin-top: 230px;
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+
+
+.img6 h1{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+    font-weight: 500;
+}
+
+.img6 h3{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align:left;
+    font-size: 12px;
+    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+    font-weight: lighter;  
+    text-transform: uppercase;
+}
+
+.desc6 button{
+    background-color: rgba(255, 5, 9, 0.507);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* -------------------------------------- */
+/* ------- MIDBOT - TERCER MODULO  -------- */
+/* -------------------------------------- */
+
+.midbot{
+    height: auto;
+    background-size:cover;
+    padding: 10px;
+    background-blend-mode:soft-light;
+    background: linear-gradient(270deg, #810202 5%, #ec1c24 100%);
+    place-items: center;
+    border-radius: 5px;
+    margin: 14px;
+}
+
+
+
+
+.col{
+    place-items: center;
+
+}
+
+.card:hover{
+    cursor:pointer; 
+}
+
+
+
+.card h6{
+    color: #BA181B;
+    font-size: large;
+}
+
+.card{
+    width: 100%;
+    place-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
+}
+
+.card h5{
+    font-size: 18px !important;
+}
+
+.camisetabutton{
+    padding: 2px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    border-color: #BA181B;
+}
+
+.camisetabutton:hover{
+    transform: scale(1.01);
+    transition: all 0.3s;
+}
+
+.tiendapincha:hover{
+    cursor:pointer; 
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
+.tiendapincha{
+    height: 80px;
+}
+
+/*  ------------ FOOTER ------------ */
+
+footer{
+    background-color: rgb(22, 26, 29);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-transform: capitalize;
+    height: auto;
+}
+
+.redes i{
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.redes i:hover{
+    color: rgb(177, 167, 166);
+}
+
+footer p{
+    text-decoration:none;
+}
