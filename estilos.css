@@ -714,11 +714,23 @@ footer{
     height: auto;
 }
 
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
 .redes i{
-    font-size: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 10px;
+    font-size: 15px;
+    letter-spacing: 20px;
     color: rgb(255, 255, 255);
+}
+
+.redes img{
+    height: 55px;
+    width: auto;
+
 }
 
 .redes i:hover{
@@ -727,7 +739,13 @@ footer{
 
 footer p{
     text-decoration:none;
+    text-transform: none;
+    
+
 }
+
+
+
 
 /*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
 /*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
@@ -776,7 +794,7 @@ footer p{
 }
 
 .text-primary {
-    color: #e00b0e!important;
+    color: #ca1d06!important;
 }
 
 
@@ -884,18 +902,18 @@ footer p{
     }  
 
     .fecha h2{
-        font-size: 16px !important ;
-        margin-top: 20px;
+        font-size: 17px !important ;
+        margin-top: 30px;
         text-align: center;
     }
     .fecha h3{
-        font-size: 15px !important;
-        margin-top: 20px;
+        font-size: 18px !important;
+        margin-top: 40px;
         text-align: center;
     }
 
     .fecha h4{
-        font-size: 12px !important;
+        font-size: 17px !important;
         margin-top: 55px;
         text-align: center;
     }
