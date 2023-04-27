@@ -60,11 +60,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 .nav-link{
     color: $colorwhite2 !important;
 
+    &.disabled{
+        color: rgba(107, 107, 107, 0.541) !important;
+    }
+
 }
 
-.nav-link.disabled{
-    color: rgba(107, 107, 107, 0.541) !important;
-}
+
 
 .nav-item a:hover{
     color: $colorgrey1 !important;
@@ -302,19 +304,22 @@ video{
     img{
         max-width: 85px;
     }
+
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.3s;
+        filter: contrast(120%); 
+    }
+
 }
 
-
-
-.entradas:hover{
-    transform: scale(1.02);
-    transition: all 0.3s;
-    background: $colorwhite2;
-}
 
 .entradas h4:hover{
     color: $colorred4;
 }
+
+
+
 
 
 /* fin card del banner */
@@ -397,9 +402,9 @@ video{
     padding: 10px;
 
     button{
-        background-color: $colorred1;
+        background-color: $colorred3;
         font-family: $font1;
-        color: aliceblue;
+        color: $colorwhite2;
         width: 80px;
         height: 30px;
         font-size: 14px;
@@ -412,7 +417,9 @@ video{
 .img1{
     grid-area: img1;
     background-image: url(img/noticia1.jpg);
+}
 
+.img{
     h1{
         font-size: 22px;
         font-family: $font1;
@@ -431,6 +438,7 @@ video{
         font-weight: lighter;  
         text-transform: uppercase;
     }
+
 }
 
 
@@ -438,237 +446,147 @@ video{
 
 /* ------------ CONTENEDOR 1 IMG2 ------------ */
 
-.img2{
-    grid-area: img2;
-    background-image: url(img/noticia2.jpg);
-}
-
 .desc2{
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    button{
+        background-color: $colorred3;
+        font-family: $font1;
+        color: $colorwhite2;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 6px;
+    }
 }
 
+.img2{
+    grid-area: img2;
+    background-image: url(img/noticia2.jpg);
 
-.img2 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
-}
-
-.img2 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
-}
-
-.desc2 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+    @extend .img;
 }
 
 
 /* ------------ CONTENEDOR 1 IMG3 ------------ */
-
-.img3{
-    grid-area: img3;
-    background-image: url(img/noticia3.jpg);
-}
 
 .desc3{
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    button{
+        background-color: $colorred3;
+        font-family: $font1;
+        color: $colorwhite2;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 6px;
+    }
+}
+
+.img3{
+    grid-area: img3;
+    background-image: url(img/noticia3.jpg);
+
+    @extend .img;
 }
 
 
-.img3 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
-}
-
-.img3 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
-}
-
-.desc3 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
-}
 
 
 
 /* ------------ CONTENEDOR 1 IMG4 ------------ */
-
-.img4{
-    grid-area: img4;
-    background-image: url(img/noticia4.jpg);
-}
-
 .desc4{
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    button{
+        background-color: $colorred3;
+        font-family: $font1;
+        color: $colorwhite2;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 6px;
+    }
 }
 
+.img4{
+    grid-area: img4;
+    background-image: url(img/noticia4.jpg);
 
-.img4 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+    @extend .img;
 }
-
-.img4 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
-}
-
-.desc4 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
-}
-
 
 
 /* ------------ CONTENEDOR 1 IMG5 ------------ */
-
-.img5{
-    grid-area: img5;
-    background-image: url(img/noticia5.jpg);
-}
 
 .desc5{
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    button{
+        background-color: $colorred3;
+        font-family: $font1;
+        color: $colorwhite2;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 6px;
+    }
 }
 
+.img5{
+    grid-area: img5;
+    background-image: url(img/noticia5.jpg);
 
-.img5 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
-}
-
-.img5 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
-}
-
-.desc5 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+    @extend .img;
 }
 
 /* ------------ CONTENEDOR 1 IMG6 ------------ */
-
-.img6{
-    grid-area: img6;
-    background-image: url(img/noticia6.jpg);
-}
 
 .desc6{
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    button{
+        background-color: $colorred3;
+        font-family: $font1;
+        color: $colorwhite2;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 6px;
+    }
 }
 
+.img6{
+    grid-area: img6;
+    background-image: url(img/noticia6.jpg);
 
-.img6 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
-}
-
-.img6 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
-}
-
-.desc6 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+    @extend .img;
 }
 
 /* -------------------------------------- */
@@ -680,30 +598,15 @@ video{
     background-size:cover;
     padding: 10px;
     background-blend-mode:soft-light;
-    background: linear-gradient(270deg, #810202 5%, #ec1c24 100%);
+    background: linear-gradient(270deg, $colorred1 5%, $colorred4 100%);
     place-items: center;
     border-radius: 5px;
     margin: 14px;
     margin-bottom: 70px;
 }
 
-
-
-
 .col{
     place-items: center;
-
-}
-
-.card:hover{
-    cursor:pointer; 
-}
-
-
-
-.card h6{
-    color: #BA181B;
-    font-size: large;
 }
 
 .card{
@@ -712,11 +615,22 @@ video{
     text-align: center;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
+
+    &:hover{
+        cursor:pointer; 
+    }
+
+    h6{
+        color: $colorred3;
+        font-size: large;
+    }
+
+    h5{
+        font-size: 18px !important;
+    }
+    
 }
 
-.card h5{
-    font-size: 18px !important;
-}
 
 .camisetabutton{
     padding: 2px;
@@ -724,36 +638,43 @@ video{
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
-    color: #000000;
-    border-color: #BA181B;
-}
+    font-weight: 500;
+    color: $colorblack;
+    border-color: $colorred2;
 
-.camisetabutton:hover{
-    transform: scale(1.01);
-    transition: all 0.3s;
-}
-
-.tiendapincha:hover{
-    cursor:pointer; 
-    transform: scale(1.02);
-    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.01);
+        transition: all 0.3s;
+    }
 }
 
 .tiendapincha{
     height: 80px;
+
+    &:hover{
+        cursor:pointer; 
+        transform: scale(1.02);
+        transition: all 0.3s;
+    }
 }
 
 /*  ------------ FOOTER ------------ */
 
 footer{
-    background-color: rgb(22, 26, 29);
-    color: rgb(255, 255, 255);
+    background-color: $colorblackgrey;
+    color: $colorwhite2;
     text-align: center;
     font-size: 15px;
     padding: 20px;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family:$font1 ;
     text-transform: capitalize;
     height: auto;
+
+    p{
+        text-decoration:none;
+        text-transform: none;
+        
+    }
 }
 
 .redes{
@@ -761,32 +682,24 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-}
 
-.redes i{
-    font-size: 15px;
-    letter-spacing: 20px;
-    color: rgb(255, 255, 255);
-}
-
-.redes img{
-    height: 55px;
-    width: auto;
-
-}
-
-.redes i:hover{
-    color: rgb(177, 167, 166);
-}
-
-footer p{
-    text-decoration:none;
-    text-transform: none;
+    i{
+        font-size: 15px;
+        letter-spacing: 20px;
+        color: $colorwhite2;
+        
+        &:hover{
+            color: $colorred3;
+        }
+    }
     
 
+    img{
+        height: 55px;
+        width: auto;
+    
+    }
 }
-
-
 
 
 /*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
@@ -799,44 +712,39 @@ footer p{
 
 
 .titposiciones{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
+    font-family: $font1;
     background-image: url(./img//Fondocamisetas.jpg);
     background-position: center;
     background-size: cover;
-    color: white;
+    color: $colorwhite2;
     height: 300px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
-}
 
-.titposiciones h1{
-    font-weight: bolder;
-    font-style: italic;
-    font-size: 90px;
-    padding-top: 150px;
-    text-align: center;
-    text-shadow: 2px 3px 3px black;
+    h1{
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 90px;
+        padding-top: 150px;
+        text-align: center;
+        text-shadow: 2px 3px 3px black;
+    }
 }
 
 
 .tf-2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font1;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
 }
 
-.nombregoleador{
-    font-weight: 400;
-    text-transform: uppercase;
-}
 
 .thcolor{
-    background-color: #161A1D;
-    color: #F5F3F4;
+    background-color: $colorblackgrey;
+    color: $colorwhite2;
 }
 
 .text-primary {
-    color: #000000!important;
+    color: $colorblack!important;
 }
 
 
@@ -847,30 +755,31 @@ footer p{
     width: 100%;
     text-align: center;
     padding: 10px;
+
+    h3{
+        color: $colorgrey1;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-family: $font1 ;
+    }
+    
+    h4{
+        color: $colorblackgrey;
+        font-family:$font1;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 17px;
+        font-style: italic;
+    }
 }
 
 .cardpartpos{
     background-color: #f1f0f052;
-    border-radius: 2px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.651);
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.651);
 
 }
 
-.card-body h3{
-    color: #afafaf;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-.card-body h4{
-    color: #161A1D;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 17px;
-    font-style: italic;
-}
 
 .partidospos{
     height: auto;
@@ -887,13 +796,13 @@ footer p{
 .eqnamelogo{
     display: grid;
     place-items: center;
+
+    img{
+        height: 45px;
+    }
+    
 }
 
-
-
-.eqnamelogo img{
-    height: 45px;
-}
 
 
 /*  <!-- fin resultados --> */
@@ -911,28 +820,29 @@ footer p{
 
     .fecha{
         padding: 50px !important;
-    }
 
-    .fecha h1{
-        font-size: 75px !important;
-        text-align: center;
-    }  
-
-    .fecha h2{
-        font-size: 17px !important ;
-        margin-top: 30px;
-        text-align: center;
-    }
-    .fecha h3{
-        font-size: 18px !important;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .fecha h4{
-        font-size: 17px !important;
-        margin-top: 55px;
-        text-align: center;
+        h1{
+            font-size: 75px !important;
+            text-align: center;
+        }  
+    
+        h2{
+            font-size: 17px !important ;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        h3{
+            font-size: 18px !important;
+            margin-top: 40px;
+            text-align: center;
+        }
+    
+        h4{
+            font-size: 17px !important;
+            margin-top: 55px;
+            text-align: center;
+        }
     }
 
     .descpartido{
@@ -958,26 +868,28 @@ footer p{
 
 @media only screen and (max-width:1300px) and (min-width: 900px) {
 
-    .fecha h1{
+    .fecha{
+        padding-bottom: 0;
+
+        
+    h1{
         font-size: 120px;
     }
 
-    .fecha h2{
+    h2{
         font-size: 18px;
         margin-bottom: 12px;
         letter-spacing: 4px;
     }
 
-    .fecha h3{
+    h3{
         font-size: 13px;
     }
 
-    .fecha h4{
+    h4{
         font-size: 17px;
     }
     
-    .fecha{
-        padding-bottom: 0;
     }
 
     .nright{

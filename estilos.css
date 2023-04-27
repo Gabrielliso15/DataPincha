@@ -33,7 +33,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .nav-link {
   color: #FFFFFF !important;
 }
-
 .nav-link.disabled {
   color: rgba(107, 107, 107, 0.541) !important;
 }
@@ -240,11 +239,10 @@ video {
 .entradas img {
   max-width: 85px;
 }
-
 .entradas:hover {
   transform: scale(1.02);
   transition: all 0.3s;
-  background: #FFFFFF;
+  filter: contrast(120%);
 }
 
 .entradas h4:hover {
@@ -293,13 +291,13 @@ video {
 }
 
 /* ------------ CONTENEDOR 1 IMG AND HOVER ------------ */
-.img {
+.img, .img6, .img5, .img4, .img3, .img2 {
   background-size: cover;
   background-position: center;
   border-radius: 3px;
 }
 
-.img:hover {
+.img:hover, .img6:hover, .img5:hover, .img4:hover, .img3:hover, .img2:hover {
   transform: scale(1.04);
   transition: all 0.3s;
   box-shadow: 0 0 5px #0B090A;
@@ -315,9 +313,9 @@ video {
   padding: 10px;
 }
 .desc1 button {
-  background-color: #660708;
+  background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 80px;
   height: 30px;
   font-size: 14px;
@@ -330,7 +328,8 @@ video {
   grid-area: img1;
   background-image: url(img/noticia1.jpg);
 }
-.img1 h1 {
+
+.img h1, .img6 h1, .img5 h1, .img4 h1, .img3 h1, .img2 h1 {
   font-size: 22px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #FFFFFF;
@@ -338,7 +337,7 @@ video {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
   font-weight: 500;
 }
-.img1 h3 {
+.img h3, .img6 h3, .img5 h3, .img4 h3, .img3 h3, .img2 h3 {
   font-family: "Prompt", sans-serif;
   color: #FFFFFF;
   text-align: left;
@@ -349,41 +348,16 @@ video {
 }
 
 /* ------------ CONTENEDOR 1 IMG2 ------------ */
-.img2 {
-  grid-area: img2;
-  background-image: url(img/noticia2.jpg);
-}
-
 .desc2 {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-
-.img2 h1 {
-  font-size: 22px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
-  font-weight: 500;
-}
-
-.img2 h3 {
-  font-family: "Prompt", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
 .desc2 button {
-  background-color: rgba(255, 5, 9, 0.507);
+  background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 80px;
   height: 30px;
   font-size: 14px;
@@ -392,42 +366,22 @@ video {
   border-radius: 6px;
 }
 
-/* ------------ CONTENEDOR 1 IMG3 ------------ */
-.img3 {
-  grid-area: img3;
-  background-image: url(img/noticia3.jpg);
+.img2 {
+  grid-area: img2;
+  background-image: url(img/noticia2.jpg);
 }
 
+/* ------------ CONTENEDOR 1 IMG3 ------------ */
 .desc3 {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-
-.img3 h1 {
-  font-size: 22px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
-  font-weight: 500;
-}
-
-.img3 h3 {
-  font-family: "Prompt", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
 .desc3 button {
-  background-color: rgba(255, 5, 9, 0.507);
+  background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 80px;
   height: 30px;
   font-size: 14px;
@@ -436,42 +390,22 @@ video {
   border-radius: 6px;
 }
 
-/* ------------ CONTENEDOR 1 IMG4 ------------ */
-.img4 {
-  grid-area: img4;
-  background-image: url(img/noticia4.jpg);
+.img3 {
+  grid-area: img3;
+  background-image: url(img/noticia3.jpg);
 }
 
+/* ------------ CONTENEDOR 1 IMG4 ------------ */
 .desc4 {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-
-.img4 h1 {
-  font-size: 22px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
-  font-weight: 500;
-}
-
-.img4 h3 {
-  font-family: "Prompt", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
 .desc4 button {
-  background-color: rgba(255, 5, 9, 0.507);
+  background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 80px;
   height: 30px;
   font-size: 14px;
@@ -480,42 +414,22 @@ video {
   border-radius: 6px;
 }
 
-/* ------------ CONTENEDOR 1 IMG5 ------------ */
-.img5 {
-  grid-area: img5;
-  background-image: url(img/noticia5.jpg);
+.img4 {
+  grid-area: img4;
+  background-image: url(img/noticia4.jpg);
 }
 
+/* ------------ CONTENEDOR 1 IMG5 ------------ */
 .desc5 {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-
-.img5 h1 {
-  font-size: 22px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
-  font-weight: 500;
-}
-
-.img5 h3 {
-  font-family: "Prompt", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
 .desc5 button {
-  background-color: rgba(255, 5, 9, 0.507);
+  background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 80px;
   height: 30px;
   font-size: 14px;
@@ -524,48 +438,33 @@ video {
   border-radius: 6px;
 }
 
-/* ------------ CONTENEDOR 1 IMG6 ------------ */
-.img6 {
-  grid-area: img6;
-  background-image: url(img/noticia6.jpg);
+.img5 {
+  grid-area: img5;
+  background-image: url(img/noticia5.jpg);
 }
 
+/* ------------ CONTENEDOR 1 IMG6 ------------ */
 .desc6 {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-
-.img6 h1 {
-  font-size: 22px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
-  font-weight: 500;
-}
-
-.img6 h3 {
-  font-family: "Prompt", sans-serif;
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
 .desc6 button {
-  background-color: rgba(255, 5, 9, 0.507);
+  background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  color: #FFFFFF;
   width: 80px;
   height: 30px;
   font-size: 14px;
   font-style: italic;
   font-weight: bolder;
   border-radius: 6px;
+}
+
+.img6 {
+  grid-area: img6;
+  background-image: url(img/noticia6.jpg);
 }
 
 /* -------------------------------------- */
@@ -576,7 +475,7 @@ video {
   background-size: cover;
   padding: 10px;
   background-blend-mode: soft-light;
-  background: linear-gradient(270deg, #810202 5%, #ec1c24 100%);
+  background: linear-gradient(270deg, #660708 5%, #E5383B 100%);
   place-items: center;
   border-radius: 5px;
   margin: 14px;
@@ -587,15 +486,6 @@ video {
   place-items: center;
 }
 
-.card:hover {
-  cursor: pointer;
-}
-
-.card h6 {
-  color: #BA181B;
-  font-size: large;
-}
-
 .card {
   width: 100%;
   place-items: center;
@@ -603,7 +493,13 @@ video {
   border-radius: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
 }
-
+.card:hover {
+  cursor: pointer;
+}
+.card h6 {
+  color: #BA181B;
+  font-size: large;
+}
 .card h5 {
   font-size: 18px !important;
 }
@@ -614,35 +510,38 @@ video {
   padding-left: 20px;
   padding-right: 20px;
   text-transform: uppercase;
-  color: #000000;
-  border-color: #BA181B;
+  font-weight: 500;
+  color: #0B090A;
+  border-color: #A4161A;
 }
-
 .camisetabutton:hover {
   transform: scale(1.01);
-  transition: all 0.3s;
-}
-
-.tiendapincha:hover {
-  cursor: pointer;
-  transform: scale(1.02);
   transition: all 0.3s;
 }
 
 .tiendapincha {
   height: 80px;
 }
+.tiendapincha:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
 
 /*  ------------ FOOTER ------------ */
 footer {
-  background-color: rgb(22, 26, 29);
-  color: rgb(255, 255, 255);
+  background-color: #161A1D;
+  color: #FFFFFF;
   text-align: center;
   font-size: 15px;
   padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: capitalize;
   height: auto;
+}
+footer p {
+  text-decoration: none;
+  text-transform: none;
 }
 
 .redes {
@@ -651,25 +550,17 @@ footer {
   align-items: center;
   padding-bottom: 20px;
 }
-
 .redes i {
   font-size: 15px;
   letter-spacing: 20px;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
 }
-
+.redes i:hover {
+  color: #BA181B;
+}
 .redes img {
   height: 55px;
   width: auto;
-}
-
-.redes i:hover {
-  color: rgb(177, 167, 166);
-}
-
-footer p {
-  text-decoration: none;
-  text-transform: none;
 }
 
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
@@ -680,15 +571,13 @@ footer p {
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
 .titposiciones {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
   background-image: url(./img//Fondocamisetas.jpg);
   background-position: center;
   background-size: cover;
-  color: white;
+  color: #FFFFFF;
   height: 300px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
 }
-
 .titposiciones h1 {
   font-weight: bolder;
   font-style: italic;
@@ -699,23 +588,18 @@ footer p {
 }
 
 .tf-2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: uppercase;
-  font-weight: 900;
-}
-
-.nombregoleador {
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .thcolor {
   background-color: #161A1D;
-  color: #F5F3F4;
+  color: #FFFFFF;
 }
 
 .text-primary {
-  color: #000000 !important;
+  color: #0B090A !important;
 }
 
 /*  <!-- inicio resultados --> */
@@ -724,20 +608,12 @@ footer p {
   text-align: center;
   padding: 10px;
 }
-
-.cardpartpos {
-  background-color: rgba(241, 240, 240, 0.3215686275);
-  border-radius: 2px;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.651);
-}
-
 .card-body h3 {
-  color: #afafaf;
+  color: #B1A7A6;
   text-transform: uppercase;
   font-size: 11px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 .card-body h4 {
   color: #161A1D;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -745,6 +621,12 @@ footer p {
   font-weight: 700;
   font-size: 17px;
   font-style: italic;
+}
+
+.cardpartpos {
+  background-color: rgba(241, 240, 240, 0.3215686275);
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.651);
 }
 
 .partidospos {
@@ -761,7 +643,6 @@ footer p {
   display: grid;
   place-items: center;
 }
-
 .eqnamelogo img {
   height: 45px;
 }
@@ -800,15 +681,18 @@ footer p {
     margin-top: 10px;
     width: 100%;
   }
-  .img h1 {
+  .img h1, .img2 h1, .img3 h1, .img4 h1, .img5 h1, .img6 h1 {
     font-size: 20px;
   }
-  .img {
+  .img, .img2, .img3, .img4, .img5, .img6 {
     background-size: cover;
     background-position: top;
   }
 }
 @media only screen and (max-width: 1300px) and (min-width: 900px) {
+  .fecha {
+    padding-bottom: 0;
+  }
   .fecha h1 {
     font-size: 120px;
   }
@@ -823,16 +707,13 @@ footer p {
   .fecha h4 {
     font-size: 17px;
   }
-  .fecha {
-    padding-bottom: 0;
-  }
   .nright {
     place-content: center;
   }
   .card2 {
     width: 70%;
   }
-  .img {
+  .img, .img2, .img3, .img4, .img5, .img6 {
     background-size: cover;
     background-position: top;
   }
