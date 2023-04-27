@@ -331,7 +331,7 @@ video{
     "img4 img5 img6"
     ;
     grid-gap: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 50px;
 }
 
 /* ------------ CONTENEDOR 1 IMG AND HOVER ------------ */
@@ -398,6 +398,7 @@ video{
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 6px;
 }
 
 /* ------------ CONTENEDOR 1 IMG2 ------------ */
@@ -443,6 +444,7 @@ video{
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 6px;
 }
 
 
@@ -489,6 +491,7 @@ video{
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 6px;
 }
 
 
@@ -536,6 +539,7 @@ video{
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 6px;
 }
 
 
@@ -583,6 +587,7 @@ video{
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 6px;
 }
 
 /* ------------ CONTENEDOR 1 IMG6 ------------ */
@@ -628,6 +633,7 @@ video{
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+    border-radius: 6px;
 }
 
 /* -------------------------------------- */
@@ -643,6 +649,7 @@ video{
     place-items: center;
     border-radius: 5px;
     margin: 14px;
+    margin-bottom: 70px;
 }
 
 
@@ -794,7 +801,7 @@ footer p{
 }
 
 .text-primary {
-    color: #ca1d06!important;
+    color: #000000!important;
 }
 
 
@@ -887,7 +894,6 @@ footer p{
     }
 
     
-    
 }
 
 @media only screen and (max-width:570px){
@@ -932,6 +938,7 @@ footer p{
         background-size: cover;
         background-position: top;
     }
+
 }
 
 
@@ -992,7 +999,7 @@ footer p{
 
     .titposiciones h1{
         padding-top: 150px;
-        font-size: 70px;
+        font-size: 75px;
         text-align: center;
     }
 
