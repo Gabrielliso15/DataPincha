@@ -1,3 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Fjalla+One&display=swap');
+
+
+
+/* paleta de colores */
+
+$colorblack : #0B090A ;
+$colorblackgrey : #161A1D ;
+$colorred1 : #660708 ;
+$colorred2 : #A4161A ;
+$colorred3 : #BA181B ;
+$colorred4 : #E5383B ;
+$colorgrey1 : #B1A7A6 ;
+$colorgrey2 : #D3D3D3 ;
+$colorwhite1 : #F5F3F4 ;
+$colorwhite2 : #FFFFFF ;
+
+/* Fuentes */
+
+$font1 :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+$font2 : 'Cabin', sans-serif;
+$font3 : 'Fjalla One', sans-serif;
+$font4 : 'Prompt', sans-serif ;
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -14,7 +41,7 @@
 
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-    background-color: rgb(22, 26, 29) !important;  
+    background-color: $colorblackgrey !important;  
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -25,12 +52,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 
 .navbar-nav{
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font1;
     font-weight: bolder;
     font-style: italic;
 }
+
 .nav-link{
-    color: rgb(245, 243, 244) !important;
+    color: $colorwhite2 !important;
 
 }
 
@@ -39,7 +67,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 }
 
 .nav-item a:hover{
-    color: #bebebed0 !important;
+    color: $colorgrey1 !important;
 }
 
 /* -------------------------------------- */
@@ -58,7 +86,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     height: calc(100vh - 65px);
     width: 100%;
     height: 700px;
-    background-color: rgba(0, 0, 0, 0.452);
     background-blend-mode:soft-light;
     position: relative;
     z-index: 2;
@@ -74,21 +101,22 @@ video{
     object-fit: cover;
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
 }
+
 .capa{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%);
+    background: linear-gradient(270deg, #161a1dd8 5%, #0b090aa1 100%);
     opacity: 0.7;
 }
 
 .banner{
     width: 98%;
     max-height: fit-content;
-
 }
+
 .nright{
     display: flex;
     width: 100%;
@@ -109,42 +137,43 @@ video{
 
 .fecha{
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: $colorwhite2;
     padding: 25px 0px 50px 50px;
-    font-family: 'Gill  Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font1;
 
-}
+    h1{
+        font-size: 135px;
+        text-transform:uppercase;
+        font-style:italic;
+        text-shadow: 5px 5px 3px $colorblack;
+        font-weight: bolder;
+    }
 
-.fecha h2{
-    margin-top: 3px;
-    text-transform: uppercase;
-    font-weight:lighter;
-    font-size: 27px;
-    margin-bottom: 12px;
-    letter-spacing: 5px;
-    text-shadow: 2px 3px 3px black;
-}
+    h2{
+        margin-top: 3px;
+        text-transform: uppercase;
+        font-weight:lighter;
+        font-size: 27px;
+        margin-bottom: 12px;
+        letter-spacing: 5px;
+        text-shadow: 2px 3px 3px $colorblack;
+    }
 
-.fecha h1{
-    font-size: 135px;
-    text-transform:uppercase;
-    font-style:italic;
-    text-shadow: 5px 5px 3px black;
-    font-weight: bolder;
-}
-
-.fecha h3{
-    text-transform: uppercase;
-    font-weight:lighter;
-    font-size: 20px;
-    text-shadow: 3px 3px 3px black;
-}
-
-.fecha h4{
-    text-transform: uppercase;
-    font-weight:lighter;
-    font-size: 16px;
-    text-shadow: 2px 2px 2px black;
+    h3{
+        text-transform: uppercase;
+        font-weight:lighter;
+        font-size: 20px;
+        text-shadow: 3px 3px 3px $colorblack;
+    }
+    
+    h4{
+        text-transform: uppercase;
+        font-weight:lighter;
+        font-size: 16px;
+        text-shadow: 2px 2px 2px $colorblack;
+    
+    }
+    
 
 }
 
@@ -153,8 +182,8 @@ video{
     padding: 10px;
     margin-top: 30px;
     margin-right: 60px;
-    background-color: rgba(0, 0, 0, 0.171);
-    border-radius: 17px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 7px;
 }
 
 /* fin titulos del banner */
@@ -177,71 +206,77 @@ video{
     border-radius: 5px;
 }
 
-.card2-title img{
-    position: absolute;
-    top: 17px;
-    right: 15px;
-    height: 55px;
-}
-
 .card2-title {
-    background: linear-gradient(270deg, #161A1D 5%, #0B090A 100%);
+    background: linear-gradient(270deg, $colorblack 5%, $colorblackgrey 100%);
     text-align: left;
     position: relative;
     height: 95px;
     padding: 15px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+
+
+    img{
+        position: absolute;
+        top: 17px;
+        right: 15px;
+        height: 55px;
+    }
+
+    h3{
+        font-family: $font1;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: italic;
+        color: $colorwhite2;
+    }
+    
+    p{
+        font-family: $font1;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: italic;
+        color: $colorwhite2;
+    }
 }
 
-.card2-title h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: italic;
-    color: #F5F3F4;
-}
 
-.card2-title p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: italic;
-    color: #F5F3F4;
-}
 
 .escudos{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
+
+    img{
+        max-width: 65px;
+    }
+    
+    span{
+        margin: 0 30px;
+        font-size: 24px;
+        font-weight: 700;
+    }
 }
 
-.escudos img{
-    max-width: 65px;
-}
 
-.escudos span{
-    margin: 0 30px;
-    font-size: 24px;
-    font-weight: 700;
-}
 .equipos{
     place-items: center;
     padding: 0 15px 15px;
     text-align: center;
-    color: #161A1D;
+    color: $colorblackgrey;
     font-weight: 700;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
     margin: 0 5px;
+
+    span{
+        margin-right: 30px;
+        margin-left: 5px;
+    }
 }
 
-.equipos span{
-    margin-right: 30px;
-    margin-left: 5px;
-}
 
 .entradas{
     margin-top: 10px;
@@ -249,35 +284,36 @@ video{
     text-align: center;
     justify-content: center;
     line-height: 5px;
-    background: linear-gradient(270deg, #D3D3D3 5%, #F5F3F4 100%);
+    background: linear-gradient(270deg, $colorgrey2 5%, $colorwhite1 100%);
     border-radius: 0 0 5px 5px;
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
     border: 1px solid rgba(163, 163, 163, 0.678);
+
+    h4{
+        color: $colorblackgrey;
+        text-transform: uppercase;
+        font-family: $font1;
+        font-weight: bolder;
+        font-size: 22px;
+        word-spacing: 5px;
+        text-shadow: 1px 1px 2px rgb(168, 167, 167); 
+    }
+    
+    img{
+        max-width: 85px;
+    }
 }
 
 
-.entradas h4{
-    color: #161A1D;
-    text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    font-size: 22px;
-    word-spacing: 5px;
-    text-shadow: 1px 1px 2px rgb(168, 167, 167); 
-}
-
-.entradas img{
-    max-width: 85px;
-}
 
 .entradas:hover{
     transform: scale(1.02);
     transition: all 0.3s;
-    background: #F5F3F4;
+    background: $colorwhite2;
 }
 
 .entradas h4:hover{
-    color: rgba(255, 30, 0, 0.815);
+    color: $colorred4;
 }
 
 
@@ -300,17 +336,17 @@ video{
 }
 
 .sec {
-    color: rgb(245, 243, 244);
+    color: $colorwhite2;
     text-transform: uppercase;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font1;
     text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432); 
     text-align: center;
-}
 
-.sec h2{
-    font-size: 40px;
-    font-weight:550;
-    padding: 5px;
+    h2{
+        font-size: 40px;
+        font-weight:550;
+        padding: 5px;
+    }
 }
 
 
@@ -345,21 +381,13 @@ video{
 .img:hover{
     transform: scale(1.04);
     transition: all 0.3s;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px $colorblack;
     cursor:pointer;
-    /* /* width: 300px;
-    opacity: 1; */
     filter: contrast(120%); 
 
 }
 
 /* ------------ CONTENEDOR 1 IMG1 ------------ */
-
-.img1{
-    grid-area: img1;
-    background-image: url(img/noticia1.jpg);
-
-}
 
 
 .desc1{
@@ -367,39 +395,46 @@ video{
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    button{
+        background-color: $colorred1;
+        font-family: $font1;
+        color: aliceblue;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 6px;
+    }
+}
+
+.img1{
+    grid-area: img1;
+    background-image: url(img/noticia1.jpg);
+
+    h1{
+        font-size: 22px;
+        font-family: $font1;
+        color: $colorwhite2;
+        text-align:left;
+        text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+        font-weight: 500;
+    }
+    
+    h3{
+        font-family: $font4;
+        color: $colorwhite2;
+        text-align:left;
+        font-size: 12px;
+        text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
+        font-weight: lighter;  
+        text-transform: uppercase;
+    }
 }
 
 
-.img1 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
-}
 
-.img1 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
-}
-
-.desc1 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
-}
 
 /* ------------ CONTENEDOR 1 IMG2 ------------ */
 
@@ -871,30 +906,6 @@ footer p{
 /*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
 
 
-@media only screen and (min-width:1600px){
-
-
-
-    .fecha h1{
-        font-size: 185px;
-    }
-
-    .fecha h2{
-        font-size: 38px;
-        margin-bottom: 12px;
-        letter-spacing: 5px;
-    }
-
-    .fecha h3{
-        font-size: 27px;
-    }
-
-    .fecha h4{
-        font-size: 26px;
-    }
-
-    
-}
 
 @media only screen and (max-width:570px){
 
@@ -948,7 +959,7 @@ footer p{
 @media only screen and (max-width:1300px) and (min-width: 900px) {
 
     .fecha h1{
-        font-size: 95px;
+        font-size: 120px;
     }
 
     .fecha h2{
@@ -1025,10 +1036,22 @@ footer p{
         ;
     }
 
-    .titposiciones h1{
-        padding-top: 150px;
-        font-size: 40px;
-        text-align: center;
+    .fecha h1{
+        font-size: 120px;
+    }
+
+    .fecha h2{
+        font-size: 18px;
+        margin-bottom: 12px;
+        letter-spacing: 4px;
+    }
+
+    .fecha h3{
+        font-size: 13px;
+    }
+
+    .fecha h4{
+        font-size: 17px;
     }
 
 
