@@ -1,1042 +1,901 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none !important;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
 }
 
-
-.logo img{
-    height: 50px;
-    width: 90px;
-    margin-right: 30px;
+.logo img {
+  height: 50px;
+  width: 90px;
+  margin-right: 30px;
 }
 
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-    background-color: rgb(22, 26, 29) !important;  
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: rgb(22, 26, 29) !important;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(img/120px-Hamburger_icon_white.svg.png);  
-    background-color: transparent; 
+  background-image: url(img/120px-Hamburger_icon_white.svg.png);
+  background-color: transparent;
 }
 
-
-.navbar-nav{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    font-style: italic;
-}
-.nav-link{
-    color: rgb(245, 243, 244) !important;
-
+.navbar-nav {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-style: italic;
 }
 
-.nav-link.disabled{
-    color: rgba(107, 107, 107, 0.541) !important;
+.nav-link {
+  color: rgb(245, 243, 244) !important;
 }
 
-.nav-item a:hover{
-    color: #bebebed0 !important;
+.nav-link.disabled {
+  color: rgba(107, 107, 107, 0.541) !important;
+}
+
+.nav-item a:hover {
+  color: rgba(190, 190, 190, 0.8156862745) !important;
 }
 
 /* -------------------------------------- */
 /* ------------ BANNER MAIN ------------ */
 /* -------------------------------------- */
-
-
 #hero {
-    min-height: 100vh;
-    position: relative;
-    display: flex;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
 }
 
-.main{
-    display: flex;
-    height: calc(100vh - 65px);
-    width: 100%;
-    height: 700px;
-    background-color: rgba(0, 0, 0, 0.452);
-    background-blend-mode:soft-light;
-    position: relative;
-    z-index: 2;
+.main {
+  display: flex;
+  height: calc(100vh - 65px);
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.452);
+  background-blend-mode: soft-light;
+  position: relative;
+  z-index: 2;
 }
 
-
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
-}
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%);
-    opacity: 0.7;
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
 }
 
-.banner{
-    width: 98%;
-    max-height: fit-content;
-
-}
-.nright{
-    display: flex;
-    width: 100%;
-    padding: 30px;
-}
-
-.nleft{
-    width: 100%;
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(22, 26, 29, 0.6588235294) 5%, rgba(11, 9, 10, 0.8078431373) 100%);
+  opacity: 0.7;
 }
 
+.banner {
+  width: 98%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
 
+.nright {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+}
 
+.nleft {
+  width: 100%;
+}
 
 /* ------------ BANNER TITLE ------------ */
-
-
 /* inicia titulos del banner */
-
-.fecha{
-    width: 100%;
-    color: rgb(255, 255, 255);
-    padding: 25px 0px 50px 50px;
-    font-family: 'Gill  Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+.fecha {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding: 25px 0px 50px 50px;
+  font-family: "Gill  Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.fecha h2{
-    margin-top: 3px;
-    text-transform: uppercase;
-    font-weight:lighter;
-    font-size: 27px;
-    margin-bottom: 12px;
-    letter-spacing: 5px;
-    text-shadow: 2px 3px 3px black;
+.fecha h2 {
+  margin-top: 3px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 27px;
+  margin-bottom: 12px;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 3px black;
 }
 
-.fecha h1{
-    font-size: 135px;
-    text-transform:uppercase;
-    font-style:italic;
-    text-shadow: 5px 5px 3px black;
-    font-weight: bolder;
+.fecha h1 {
+  font-size: 135px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: 5px 5px 3px black;
+  font-weight: bolder;
 }
 
-.fecha h3{
-    text-transform: uppercase;
-    font-weight:lighter;
-    font-size: 20px;
-    text-shadow: 3px 3px 3px black;
+.fecha h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
 }
 
-.fecha h4{
-    text-transform: uppercase;
-    font-weight:lighter;
-    font-size: 16px;
-    text-shadow: 2px 2px 2px black;
-
+.fecha h4 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px black;
 }
 
-
-.descpartido{
-    padding: 10px;
-    margin-top: 30px;
-    margin-right: 60px;
-    background-color: rgba(0, 0, 0, 0.171);
-    border-radius: 17px;
+.descpartido {
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 60px;
+  background-color: rgba(0, 0, 0, 0.171);
+  border-radius: 17px;
 }
 
 /* fin titulos del banner */
-
-
-
-
 /* ------------- BANNER CARD ------------ */
-
-
-
 /* inicia card del banner */
-
-.card2{
-    margin-top: 28px;
-    width: 100%;
-    background: linear-gradient(270deg, #D3D3D3 5%, #F5F3F4 100%);
-    height: fit-content;
-    box-shadow: 5px 5px 7px rgba(172, 170, 170, 0.267);
-    border-radius: 5px;
+.card2 {
+  margin-top: 28px;
+  width: 100%;
+  background: linear-gradient(270deg, #D3D3D3 5%, #F5F3F4 100%);
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: 5px 5px 7px rgba(172, 170, 170, 0.267);
+  border-radius: 5px;
 }
 
-.card2-title img{
-    position: absolute;
-    top: 17px;
-    right: 15px;
-    height: 55px;
+.card2-title img {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  height: 55px;
 }
 
 .card2-title {
-    background: linear-gradient(270deg, #161A1D 5%, #0B090A 100%);
-    text-align: left;
-    position: relative;
-    height: 95px;
-    padding: 15px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+  background: linear-gradient(270deg, #161A1D 5%, #0B090A 100%);
+  text-align: left;
+  position: relative;
+  height: 95px;
+  padding: 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-.card2-title h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: italic;
-    color: #F5F3F4;
+.card2-title h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  color: #F5F3F4;
 }
 
-.card2-title p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: italic;
-    color: #F5F3F4;
+.card2-title p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  color: #F5F3F4;
 }
 
-.escudos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+.escudos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.escudos img{
-    max-width: 65px;
+.escudos img {
+  max-width: 65px;
 }
 
-.escudos span{
-    margin: 0 30px;
-    font-size: 24px;
-    font-weight: 700;
-}
-.equipos{
-    place-items: center;
-    padding: 0 15px 15px;
-    text-align: center;
-    color: #161A1D;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin: 0 5px;
+.escudos span {
+  margin: 0 30px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.equipos span{
-    margin-right: 30px;
-    margin-left: 5px;
+.equipos {
+  place-items: center;
+  padding: 0 15px 15px;
+  text-align: center;
+  color: #161A1D;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 5px;
 }
 
-.entradas{
-    margin-top: 10px;
-    padding-top:5px ;
-    text-align: center;
-    justify-content: center;
-    line-height: 5px;
-    background: linear-gradient(270deg, #D3D3D3 5%, #F5F3F4 100%);
-    border-radius: 0 0 5px 5px;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
-    border: 1px solid rgba(163, 163, 163, 0.678);
+.equipos span {
+  margin-right: 30px;
+  margin-left: 5px;
 }
 
-
-.entradas h4{
-    color: #161A1D;
-    text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    font-size: 22px;
-    word-spacing: 5px;
-    text-shadow: 1px 1px 2px rgb(168, 167, 167); 
+.entradas {
+  margin-top: 10px;
+  padding-top: 5px;
+  text-align: center;
+  justify-content: center;
+  line-height: 5px;
+  background: linear-gradient(270deg, #D3D3D3 5%, #F5F3F4 100%);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
+  border: 1px solid rgba(163, 163, 163, 0.678);
 }
 
-.entradas img{
-    max-width: 85px;
+.entradas h4 {
+  color: #161A1D;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  word-spacing: 5px;
+  text-shadow: 1px 1px 2px rgb(168, 167, 167);
 }
 
-.entradas:hover{
-    transform: scale(1.02);
-    transition: all 0.3s;
-    background: #F5F3F4;
+.entradas img {
+  max-width: 85px;
 }
 
-.entradas h4:hover{
-    color: rgba(255, 30, 0, 0.815);
+.entradas:hover {
+  transform: scale(1.02);
+  transition: all 0.3s;
+  background: #F5F3F4;
 }
 
+.entradas h4:hover {
+  color: rgba(255, 30, 0, 0.815);
+}
 
 /* fin card del banner */
-
 /* -------------------------------------- */
 /* ------- MID - SEGUNDO MODULO  -------- */
 /* -------------------------------------- */
-
-
-
-.mid{
-    height: auto;
-    background-image: url(img/fondo.jpg);
-    background-blend-mode:soft-light;
-    background-size:cover;
-    background-color: rgba(20, 1, 1, 0.74);
-    padding: 30px;
-    padding-bottom: 5px;
+.mid {
+  height: auto;
+  background-image: url(img/fondo.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-color: rgba(20, 1, 1, 0.74);
+  padding: 30px;
+  padding-bottom: 5px;
 }
 
 .sec {
-    color: rgb(245, 243, 244);
-    text-transform: uppercase;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432); 
-    text-align: center;
+  color: rgb(245, 243, 244);
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432);
+  text-align: center;
 }
 
-.sec h2{
-    font-size: 40px;
-    font-weight:550;
-    padding: 5px;
+.sec h2 {
+  font-size: 40px;
+  font-weight: 550;
+  padding: 5px;
 }
-
-
-
 
 /* -------------------------------------- */
 /* ------------ CONTENEDOR 1 ------------ */
 /* -------------------------------------- */
-
-.cont.cont1{
-    padding: 15px;
-    height: 730px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 350px  350px  350px ;
-    grid-template-areas: 
-    "img1 img2 img3"
-    "img4 img5 img6"
-    ;
-    grid-gap: 10px;
-    margin-bottom: 50px;
+.cont.cont1 {
+  padding: 15px;
+  height: 730px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+  grid-gap: 10px;
+  margin-bottom: 50px;
 }
 
 /* ------------ CONTENEDOR 1 IMG AND HOVER ------------ */
-
-.img{
-    background-size: cover;
-    background-position: center;
-    border-radius: 3px;
+.img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
 }
 
-.img:hover{
-    transform: scale(1.04);
-    transition: all 0.3s;
-    box-shadow: 0 0 5px black;
-    cursor:pointer;
-    /* /* width: 300px;
-    opacity: 1; */
-    filter: contrast(120%); 
-
+.img:hover {
+  transform: scale(1.04);
+  transition: all 0.3s;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  /* /* width: 300px;
+  opacity: 1; */
+  filter: contrast(120%);
 }
 
 /* ------------ CONTENEDOR 1 IMG1 ------------ */
-
-.img1{
-    grid-area: img1;
-    background-image: url(img/noticia1.jpg);
-
+.img1 {
+  grid-area: img1;
+  background-image: url(img/noticia1.jpg);
 }
 
-
-.desc1{
-    height: 120px;
-    margin-top: 230px;
-    background-color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+.desc1 {
+  height: 120px;
+  margin-top: 230px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
 }
 
-
-.img1 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+.img1 h1 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+  font-weight: 500;
 }
 
-.img1 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
+.img1 h3 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
-.desc1 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+.desc1 button {
+  background-color: rgba(255, 5, 9, 0.507);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 6px;
 }
 
 /* ------------ CONTENEDOR 1 IMG2 ------------ */
-
-.img2{
-    grid-area: img2;
-    background-image: url(img/noticia2.jpg);
+.img2 {
+  grid-area: img2;
+  background-image: url(img/noticia2.jpg);
 }
 
-.desc2{
-    height: 120px;
-    margin-top: 230px;
-    background-color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+.desc2 {
+  height: 120px;
+  margin-top: 230px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
 }
 
-
-.img2 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+.img2 h1 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+  font-weight: 500;
 }
 
-.img2 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
+.img2 h3 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
-.desc2 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+.desc2 button {
+  background-color: rgba(255, 5, 9, 0.507);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 6px;
 }
-
 
 /* ------------ CONTENEDOR 1 IMG3 ------------ */
-
-.img3{
-    grid-area: img3;
-    background-image: url(img/noticia3.jpg);
+.img3 {
+  grid-area: img3;
+  background-image: url(img/noticia3.jpg);
 }
 
-.desc3{
-    height: 120px;
-    margin-top: 230px;
-    background-color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+.desc3 {
+  height: 120px;
+  margin-top: 230px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
 }
 
-
-.img3 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+.img3 h1 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+  font-weight: 500;
 }
 
-.img3 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
+.img3 h3 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
-.desc3 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+.desc3 button {
+  background-color: rgba(255, 5, 9, 0.507);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 6px;
 }
-
-
 
 /* ------------ CONTENEDOR 1 IMG4 ------------ */
-
-.img4{
-    grid-area: img4;
-    background-image: url(img/noticia4.jpg);
+.img4 {
+  grid-area: img4;
+  background-image: url(img/noticia4.jpg);
 }
 
-.desc4{
-    height: 120px;
-    margin-top: 230px;
-    background-color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+.desc4 {
+  height: 120px;
+  margin-top: 230px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
 }
 
-
-.img4 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+.img4 h1 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+  font-weight: 500;
 }
 
-.img4 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
+.img4 h3 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
-.desc4 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+.desc4 button {
+  background-color: rgba(255, 5, 9, 0.507);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 6px;
 }
-
-
 
 /* ------------ CONTENEDOR 1 IMG5 ------------ */
-
-.img5{
-    grid-area: img5;
-    background-image: url(img/noticia5.jpg);
+.img5 {
+  grid-area: img5;
+  background-image: url(img/noticia5.jpg);
 }
 
-.desc5{
-    height: 120px;
-    margin-top: 230px;
-    background-color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+.desc5 {
+  height: 120px;
+  margin-top: 230px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
 }
 
-
-.img5 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+.img5 h1 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+  font-weight: 500;
 }
 
-.img5 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
+.img5 h3 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
-.desc5 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+.desc5 button {
+  background-color: rgba(255, 5, 9, 0.507);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 6px;
 }
 
 /* ------------ CONTENEDOR 1 IMG6 ------------ */
-
-.img6{
-    grid-area: img6;
-    background-image: url(img/noticia6.jpg);
+.img6 {
+  grid-area: img6;
+  background-image: url(img/noticia6.jpg);
 }
 
-.desc6{
-    height: 120px;
-    margin-top: 230px;
-    background-color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+.desc6 {
+  height: 120px;
+  margin-top: 230px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 10px;
 }
 
-
-.img6 h1{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align:left;
-    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
-    font-weight: 500;
+.img6 h1 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+  font-weight: 500;
 }
 
-.img6 h3{
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align:left;
-    font-size: 12px;
-    text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-    font-weight: lighter;  
-    text-transform: uppercase;
+.img6 h3 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
-.desc6 button{
-    background-color: rgba(255, 5, 9, 0.507);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 6px;
+.desc6 button {
+  background-color: rgba(255, 5, 9, 0.507);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 6px;
 }
 
 /* -------------------------------------- */
 /* ------- MIDBOT - TERCER MODULO  -------- */
 /* -------------------------------------- */
-
-.midbot{
-    height: auto;
-    background-size:cover;
-    padding: 10px;
-    background-blend-mode:soft-light;
-    background: linear-gradient(270deg, #810202 5%, #ec1c24 100%);
-    place-items: center;
-    border-radius: 5px;
-    margin: 14px;
-    margin-bottom: 70px;
+.midbot {
+  height: auto;
+  background-size: cover;
+  padding: 10px;
+  background-blend-mode: soft-light;
+  background: linear-gradient(270deg, #810202 5%, #ec1c24 100%);
+  place-items: center;
+  border-radius: 5px;
+  margin: 14px;
+  margin-bottom: 70px;
 }
 
-
-
-
-.col{
-    place-items: center;
-
+.col {
+  place-items: center;
 }
 
-.card:hover{
-    cursor:pointer; 
+.card:hover {
+  cursor: pointer;
 }
 
-
-
-.card h6{
-    color: #BA181B;
-    font-size: large;
+.card h6 {
+  color: #BA181B;
+  font-size: large;
 }
 
-.card{
-    width: 100%;
-    place-items: center;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
+.card {
+  width: 100%;
+  place-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
 }
 
-.card h5{
-    font-size: 18px !important;
+.card h5 {
+  font-size: 18px !important;
 }
 
-.camisetabutton{
-    padding: 2px;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-transform: uppercase;
-    color: #000000;
-    border-color: #BA181B;
+.camisetabutton {
+  padding: 2px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  border-color: #BA181B;
 }
 
-.camisetabutton:hover{
-    transform: scale(1.01);
-    transition: all 0.3s;
+.camisetabutton:hover {
+  transform: scale(1.01);
+  transition: all 0.3s;
 }
 
-.tiendapincha:hover{
-    cursor:pointer; 
-    transform: scale(1.02);
-    transition: all 0.3s;
+.tiendapincha:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s;
 }
 
-.tiendapincha{
-    height: 80px;
+.tiendapincha {
+  height: 80px;
 }
 
 /*  ------------ FOOTER ------------ */
-
-footer{
-    background-color: rgb(22, 26, 29);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-    font-family:Arial, Helvetica, sans-serif ;
-    text-transform: capitalize;
-    height: auto;
+footer {
+  background-color: rgb(22, 26, 29);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  height: auto;
 }
 
-.redes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
+.redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-.redes i{
-    font-size: 15px;
-    letter-spacing: 20px;
-    color: rgb(255, 255, 255);
+.redes i {
+  font-size: 15px;
+  letter-spacing: 20px;
+  color: rgb(255, 255, 255);
 }
 
-.redes img{
-    height: 55px;
-    width: auto;
-
+.redes img {
+  height: 55px;
+  width: auto;
 }
 
-.redes i:hover{
-    color: rgb(177, 167, 166);
+.redes i:hover {
+  color: rgb(177, 167, 166);
 }
 
-footer p{
-    text-decoration:none;
-    text-transform: none;
-    
-
+footer p {
+  text-decoration: none;
+  text-transform: none;
 }
 
-
-
-
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*            VISTA            *//*  ------------  ------------ */
-/*  ------------  ------------ *//*          POSICIONES         *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-
-
-
-.titposiciones{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
-    background-image: url(./img//Fondocamisetas.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    height: 300px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*            VISTA            */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*          POSICIONES         */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+.titposiciones {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
+  background-image: url(./img//Fondocamisetas.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 300px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
 }
 
-.titposiciones h1{
-    font-weight: bolder;
-    font-style: italic;
-    font-size: 90px;
-    padding-top: 150px;
-    text-align: center;
-    text-shadow: 2px 3px 3px black;
+.titposiciones h1 {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 90px;
+  padding-top: 150px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
 }
 
-
-.tf-2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
+.tf-2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-.nombregoleador{
-    font-weight: 400;
-    text-transform: uppercase;
+.nombregoleador {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.thcolor{
-    background-color: #161A1D;
-    color: #F5F3F4;
+.thcolor {
+  background-color: #161A1D;
+  color: #F5F3F4;
 }
 
 .text-primary {
-    color: #000000!important;
+  color: #000000 !important;
 }
-
-
 
 /*  <!-- inicio resultados --> */
-
-.card-body{
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+.card-body {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
-.cardpartpos{
-    background-color: #f1f0f052;
-    border-radius: 2px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.651);
-
+.cardpartpos {
+  background-color: rgba(241, 240, 240, 0.3215686275);
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.651);
 }
 
-.card-body h3{
-    color: #afafaf;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+.card-body h3 {
+  color: #afafaf;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.card-body h4{
-    color: #161A1D;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 17px;
-    font-style: italic;
+.card-body h4 {
+  color: #161A1D;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  font-style: italic;
 }
 
-.partidospos{
-    height: auto;
-    padding: 15px;
-    
+.partidospos {
+  height: auto;
+  padding: 15px;
 }
 
-
-.eqpos{
-    display: flex;
-    place-content: center;
+.eqpos {
+  display: flex;
+  place-content: center;
 }
 
-.eqnamelogo{
-    display: grid;
-    place-items: center;
+.eqnamelogo {
+  display: grid;
+  place-items: center;
 }
 
-
-
-.eqnamelogo img{
-    height: 45px;
+.eqnamelogo img {
+  height: 45px;
 }
-
 
 /*  <!-- fin resultados --> */
-
-
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*         MEDIAQUERY          *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-
-
-@media only screen and (min-width:1600px){
-
-
-
-    .fecha h1{
-        font-size: 185px;
-    }
-
-    .fecha h2{
-        font-size: 38px;
-        margin-bottom: 12px;
-        letter-spacing: 5px;
-    }
-
-    .fecha h3{
-        font-size: 27px;
-    }
-
-    .fecha h4{
-        font-size: 26px;
-    }
-
-    
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*         MEDIAQUERY          */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+@media only screen and (min-width: 1600px) {
+  .fecha h1 {
+    font-size: 185px;
+  }
+  .fecha h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    letter-spacing: 5px;
+  }
+  .fecha h3 {
+    font-size: 27px;
+  }
+  .fecha h4 {
+    font-size: 26px;
+  }
 }
-
-@media only screen and (max-width:570px){
-
-    .fecha{
-        padding: 50px !important;
-    }
-
-    .fecha h1{
-        font-size: 75px !important;
-        text-align: center;
-    }  
-
-    .fecha h2{
-        font-size: 17px !important ;
-        margin-top: 30px;
-        text-align: center;
-    }
-    .fecha h3{
-        font-size: 18px !important;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .fecha h4{
-        font-size: 17px !important;
-        margin-top: 55px;
-        text-align: center;
-    }
-
-    .descpartido{
-        place-content: center !important;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .img h1{
-        font-size: 20px;
-    }
-    
-    .img{
-        background-size: cover;
-        background-position: top;
-    }
-
+@media only screen and (max-width: 570px) {
+  .fecha {
+    padding: 50px !important;
+  }
+  .fecha h1 {
+    font-size: 75px !important;
+    text-align: center;
+  }
+  .fecha h2 {
+    font-size: 17px !important;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .fecha h3 {
+    font-size: 18px !important;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .fecha h4 {
+    font-size: 17px !important;
+    margin-top: 55px;
+    text-align: center;
+  }
+  .descpartido {
+    place-content: center !important;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .img h1 {
+    font-size: 20px;
+  }
+  .img {
+    background-size: cover;
+    background-position: top;
+  }
 }
-
-
-
-
-
-@media only screen and (max-width:1300px) and (min-width: 900px) {
-
-    .fecha h1{
-        font-size: 95px;
-    }
-
-    .fecha h2{
-        font-size: 18px;
-        margin-bottom: 12px;
-        letter-spacing: 4px;
-    }
-
-    .fecha h3{
-        font-size: 13px;
-    }
-
-    .fecha h4{
-        font-size: 17px;
-    }
-    
-    .fecha{
-        padding-bottom: 0;
-    }
-
-    .nright{
-        place-content: center ;
-    }
-
-    .card2{
-        width: 70%;
-    }
-
-    .img{
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    .cont.cont1{
-        padding: 15px;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 350px  350px ;
-        grid-template-areas: 
-    
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
-        ;
-    }
-
-    .titposiciones h1{
-        padding-top: 150px;
-        font-size: 75px;
-        text-align: center;
-    }
-
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+  .fecha h1 {
+    font-size: 95px;
+  }
+  .fecha h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+  }
+  .fecha h3 {
+    font-size: 13px;
+  }
+  .fecha h4 {
+    font-size: 17px;
+  }
+  .fecha {
+    padding-bottom: 0;
+  }
+  .nright {
+    place-content: center;
+  }
+  .card2 {
+    width: 70%;
+  }
+  .img {
+    background-size: cover;
+    background-position: top;
+  }
+  .cont.cont1 {
+    padding: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 350px 350px;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+  }
+  .titposiciones h1 {
+    padding-top: 150px;
+    font-size: 75px;
+    text-align: center;
+  }
 }
-
-
-@media only screen and (max-width:900px) and (min-width: 320px){
-
-    .cont.cont1{
-        padding: 15px;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 350px  350px 350px;
-        grid-template-areas: 
-    
-        "img1 img1 img1 "
-        "img2 img2 img2 "
-        "img3 img3 img3 "
-        "img4 img4 img4 "
-        "img5 img5 img5 "
-        "img6 img6 img6 "
-        ;
-    }
-
-    .titposiciones h1{
-        padding-top: 150px;
-        font-size: 40px;
-        text-align: center;
-    }
-
-
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+  .cont.cont1 {
+    padding: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas: "img1 img1 img1 " "img2 img2 img2 " "img3 img3 img3 " "img4 img4 img4 " "img5 img5 img5 " "img6 img6 img6 ";
+  }
+  .titposiciones h1 {
+    padding-top: 150px;
+    font-size: 40px;
+    text-align: center;
+  }
 }
-
-
-
-
-
 /* -------------------------------------- */
-/* -------------------------------------- */
+/* -------------------------------------- *//*# sourceMappingURL=estilos.css.map */
