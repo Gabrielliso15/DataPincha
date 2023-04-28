@@ -571,38 +571,52 @@ footer p {
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
 .titposiciones {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-image: url(./img//Fondocamisetas.jpg);
-  background-position: center;
+  /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.281)), url(./img//Fondocamisetas.jpg);
+  background-position-y: 25%;
   background-size: cover;
   color: #FFFFFF;
   height: 300px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
+  padding-top: 120px;
 }
 .titposiciones h1 {
   font-weight: bolder;
   font-style: italic;
   font-size: 90px;
-  padding-top: 150px;
   text-align: center;
   text-shadow: 2px 3px 3px black;
 }
+.titposiciones h5 {
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 .tf-2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 
+.nombregoleador {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .thcolor {
   background-color: #161A1D;
-  color: #FFFFFF;
+  color: #F5F3F4;
 }
 
 .text-primary {
-  color: #0B090A !important;
+  color: #000000 !important;
 }
 
-/*  <!-- inicio resultados --> */
+/*  <!-- inicio proxpartidos --> */
 .card-body {
   width: 100%;
   text-align: center;
@@ -647,12 +661,64 @@ footer p {
   height: 45px;
 }
 
-/*  <!-- fin resultados --> */
+/*  <!-- fin proxpartidos --> */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*            VISTA            */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*           PARTIDOS         */ /*  ------------   ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+/*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+.titfixture {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.137)), url(./img//fixture.jpg);
+  background-position-y: 25%;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 300px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
+  padding-top: 120px;
+}
+.titfixture h1 {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+}
+.titfixture h5 {
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.fixture {
+  height: 1200px;
+}
+
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
 /*  ------------  ------------ */ /*         MEDIAQUERY          */ /*  ------------  ------------ */
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
 /*  ------------  ------------ */ /*  ------------  ------------ */ /*  ------------  ------------ */
+@media only screen and (min-width: 1600px) {
+  .fecha h1 {
+    font-size: 185px;
+  }
+  .fecha h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    letter-spacing: 5px;
+  }
+  .fecha h3 {
+    font-size: 27px;
+  }
+  .fecha h4 {
+    font-size: 26px;
+  }
+}
 @media only screen and (max-width: 570px) {
   .fecha {
     padding: 50px !important;
@@ -690,11 +756,8 @@ footer p {
   }
 }
 @media only screen and (max-width: 1300px) and (min-width: 900px) {
-  .fecha {
-    padding-bottom: 0;
-  }
   .fecha h1 {
-    font-size: 120px;
+    font-size: 95px;
   }
   .fecha h2 {
     font-size: 18px;
@@ -706,6 +769,9 @@ footer p {
   }
   .fecha h4 {
     font-size: 17px;
+  }
+  .fecha {
+    padding-bottom: 0;
   }
   .nright {
     place-content: center;
@@ -740,19 +806,13 @@ footer p {
     grid-template-rows: 350px 350px 350px;
     grid-template-areas: "img1 img1 img1 " "img2 img2 img2 " "img3 img3 img3 " "img4 img4 img4 " "img5 img5 img5 " "img6 img6 img6 ";
   }
-  .fecha h1 {
-    font-size: 120px;
+  .titposiciones h1 {
+    padding-top: 150px;
+    font-size: 40px;
+    text-align: center;
   }
-  .fecha h2 {
-    font-size: 18px;
-    margin-bottom: 12px;
-    letter-spacing: 4px;
-  }
-  .fecha h3 {
-    font-size: 13px;
-  }
-  .fecha h4 {
-    font-size: 17px;
+  .sec h2 {
+    font-size: 25px;
   }
 }
 /* -------------------------------------- */

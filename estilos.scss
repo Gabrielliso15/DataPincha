@@ -713,43 +713,61 @@ footer{
 
 .titposiciones{
     font-family: $font1;
-    background-image: url(./img//Fondocamisetas.jpg);
-    background-position: center;
+    /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.281)), url(./img//Fondocamisetas.jpg);
+    background-position-y: 25%;
     background-size: cover;
     color: $colorwhite2;
     height: 300px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
+    padding-top: 120px;
 
     h1{
         font-weight: bolder;
         font-style: italic;
         font-size: 90px;
-        padding-top: 150px;
         text-align: center;
         text-shadow: 2px 3px 3px black;
+    }
+
+    h5{
+        font-weight: 100;
+        font-size: 18px;
+        text-align: center;
+        text-shadow: 2px 3px 3px black;
+        text-transform: uppercase;
+        margin: 0;
     }
 }
 
 
+
+
+
 .tf-2{
-    font-family: $font1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
 
+.nombregoleador{
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
 .thcolor{
-    background-color: $colorblackgrey;
-    color: $colorwhite2;
+    background-color: #161A1D;
+    color: #F5F3F4;
 }
 
 .text-primary {
-    color: $colorblack!important;
+    color: #000000!important;
 }
 
 
 
-/*  <!-- inicio resultados --> */
+
+/*  <!-- inicio proxpartidos --> */
 
 .card-body{
     width: 100%;
@@ -805,7 +823,60 @@ footer{
 
 
 
-/*  <!-- fin resultados --> */
+/*  <!-- fin proxpartidos --> */
+
+
+
+
+/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
+/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
+/*  ------------  ------------ *//*            VISTA            *//*  ------------  ------------ */
+/*  ------------  ------------ *//*           PARTIDOS         *//*  ------------   ------------ */
+/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
+/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
+
+
+
+.titfixture{
+    font-family: $font1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.137)), url(./img//fixture.jpg);
+    background-position-y: 25%;
+    background-size: cover;
+    color: $colorwhite2;
+    height: 300px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
+    padding-top: 120px;
+
+    h1{
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 90px;
+        text-align: center;
+        text-shadow: 2px 3px 3px black;
+    }
+
+    h5{
+        font-weight: 100;
+        font-size: 18px;
+        text-align: center;
+        text-shadow: 2px 3px 3px black;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+.fixture{
+    height: 1200px;
+
+}
+
+
+
+
+
+
+
+
 
 
 /*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
@@ -815,34 +886,57 @@ footer{
 /*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
 
 
+@media only screen and (min-width:1600px){
+
+
+
+    .fecha h1{
+        font-size: 185px;
+    }
+
+    .fecha h2{
+        font-size: 38px;
+        margin-bottom: 12px;
+        letter-spacing: 5px;
+    }
+
+    .fecha h3{
+        font-size: 27px;
+    }
+
+    .fecha h4{
+        font-size: 26px;
+    }
+
+    
+}
 
 @media only screen and (max-width:570px){
 
     .fecha{
         padding: 50px !important;
+    }
 
-        h1{
-            font-size: 75px !important;
-            text-align: center;
-        }  
-    
-        h2{
-            font-size: 17px !important ;
-            margin-top: 30px;
-            text-align: center;
-        }
-        
-        h3{
-            font-size: 18px !important;
-            margin-top: 40px;
-            text-align: center;
-        }
-    
-        h4{
-            font-size: 17px !important;
-            margin-top: 55px;
-            text-align: center;
-        }
+    .fecha h1{
+        font-size: 75px !important;
+        text-align: center;
+    }  
+
+    .fecha h2{
+        font-size: 17px !important ;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .fecha h3{
+        font-size: 18px !important;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .fecha h4{
+        font-size: 17px !important;
+        margin-top: 55px;
+        text-align: center;
     }
 
     .descpartido{
@@ -868,28 +962,26 @@ footer{
 
 @media only screen and (max-width:1300px) and (min-width: 900px) {
 
-    .fecha{
-        padding-bottom: 0;
-
-        
-    h1{
-        font-size: 120px;
+    .fecha h1{
+        font-size: 95px;
     }
 
-    h2{
+    .fecha h2{
         font-size: 18px;
         margin-bottom: 12px;
         letter-spacing: 4px;
     }
 
-    h3{
+    .fecha h3{
         font-size: 13px;
     }
 
-    h4{
+    .fecha h4{
         font-size: 17px;
     }
     
+    .fecha{
+        padding-bottom: 0;
     }
 
     .nright{
@@ -948,22 +1040,15 @@ footer{
         ;
     }
 
-    .fecha h1{
-        font-size: 120px;
+    .titposiciones h1{
+        padding-top: 150px;
+        font-size: 40px;
+        text-align: center;
     }
 
-    .fecha h2{
-        font-size: 18px;
-        margin-bottom: 12px;
-        letter-spacing: 4px;
-    }
+    .sec h2{
+        font-size: 25px;
 
-    .fecha h3{
-        font-size: 13px;
-    }
-
-    .fecha h4{
-        font-size: 17px;
     }
 
 
