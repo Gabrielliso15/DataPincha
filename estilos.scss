@@ -349,7 +349,7 @@ video {
     color: $colorwhite2;
     text-transform: uppercase;
     font-family: $font1;
-    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.432);
     text-align: center;
 
     h2 {
@@ -730,14 +730,14 @@ footer {
 
 .titposiciones {
     font-family: $font1;
-    /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.281)), url(./img//Fondocamisetas.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.137)), url(./img/Fondocamisetas.jpg);
     background-position-y: 25%;
     background-size: cover;
     color: $colorwhite2;
     height: 300px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
     padding-top: 120px;
+    margin-bottom: 35px;
 
     h1 {
         font-weight: bolder;
@@ -896,10 +896,12 @@ footer {
 }
 
 .titfixturemes{
-    font-family: $font3;
+    font-family: $font1;
     font-weight: 900;
     font-size: 40px;
     padding-left: 30px;
+    font-style: italic;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.432);
 }
 
 .fixture {
@@ -907,7 +909,7 @@ footer {
 }
 
 .partidostotal{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -920,12 +922,38 @@ footer {
     font-family: $font1;
     font-style: italic;
     color: $colorred3;
+
+    &:hover{
+        background-color: $colorred2;
+        color: $colorwhite1;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
 }
 
 .partidosfecha {
     font-family: $font1;
 }
 
+.partidosliga{
+    display: flex;
+    width: 96%;
+    margin-bottom: 30px;
+
+    h3{
+        font-weight: bolder;
+        font-family: $font1;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding-left: 15px;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    img{
+        height: 25px;
+    }
+}
 
 
 
@@ -1019,6 +1047,26 @@ footer {
         background-position: top;
     }
 
+    .titfixture{
+        h5{
+            font-size: 15px;
+        }
+        
+        h1{
+            font-size: 60px;
+        }
+    }
+
+    .titposiciones{
+        h5{
+            font-size: 13px;
+        }
+        
+        h1{
+            font-size: 45px;
+        }
+    }
+
 }
 
 
@@ -1077,11 +1125,6 @@ footer {
         ;
     }
 
-    .titposiciones h1 {
-        padding-top: 150px;
-        font-size: 75px;
-        text-align: center;
-    }
 
 }
 
@@ -1105,11 +1148,6 @@ footer {
         ;
     }
 
-    .titposiciones h1 {
-        padding-top: 150px;
-        font-size: 40px;
-        text-align: center;
-    }
 
     .sec h2 {
         font-size: 25px;

@@ -267,7 +267,7 @@ video {
   color: #FFFFFF;
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.432);
   text-align: center;
 }
 .sec h2 {
@@ -583,14 +583,14 @@ footer p {
 /*  ------------  ------------ */
 .titposiciones {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.281)), url(./img//Fondocamisetas.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.137)), url(./img/Fondocamisetas.jpg);
   background-position-y: 25%;
   background-size: cover;
   color: #FFFFFF;
   height: 300px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
   padding-top: 120px;
+  margin-bottom: 35px;
 }
 .titposiciones h1 {
   font-weight: bolder;
@@ -720,10 +720,12 @@ footer p {
 }
 
 .titfixturemes {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 900;
   font-size: 40px;
   padding-left: 30px;
+  font-style: italic;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.432);
 }
 
 .fixture {
@@ -731,7 +733,7 @@ footer p {
 }
 
 .partidostotal {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -743,9 +745,33 @@ footer p {
   font-style: italic;
   color: #BA181B;
 }
+.fichapartidos:hover {
+  background-color: #A4161A;
+  color: #F5F3F4;
+  transition: all 0.3s;
+  cursor: pointer;
+}
 
 .partidosfecha {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.partidosliga {
+  display: flex;
+  width: 96%;
+  margin-bottom: 30px;
+}
+.partidosliga h3 {
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 15px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+.partidosliga img {
+  height: 25px;
 }
 
 /*  ------------  ------------ */
@@ -814,6 +840,18 @@ footer p {
     background-size: cover;
     background-position: top;
   }
+  .titfixture h5 {
+    font-size: 15px;
+  }
+  .titfixture h1 {
+    font-size: 60px;
+  }
+  .titposiciones h5 {
+    font-size: 13px;
+  }
+  .titposiciones h1 {
+    font-size: 45px;
+  }
 }
 @media only screen and (max-width: 1300px) and (min-width: 900px) {
   .fecha h1 {
@@ -851,11 +889,6 @@ footer p {
     grid-template-rows: 350px 350px;
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   }
-  .titposiciones h1 {
-    padding-top: 150px;
-    font-size: 75px;
-    text-align: center;
-  }
 }
 @media only screen and (max-width: 900px) and (min-width: 320px) {
   .cont.cont1 {
@@ -865,11 +898,6 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 350px 350px 350px;
     grid-template-areas: "img1 img1 img1 " "img2 img2 img2 " "img3 img3 img3 " "img4 img4 img4 " "img5 img5 img5 " "img6 img6 img6 ";
-  }
-  .titposiciones h1 {
-    padding-top: 150px;
-    font-size: 40px;
-    text-align: center;
   }
   .sec h2 {
     font-size: 25px;
