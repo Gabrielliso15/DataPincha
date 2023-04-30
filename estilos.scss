@@ -1,31 +1,36 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Fjalla+One&display=swap');
-
 
 
 /* paleta de colores */
 
-$colorblack : #0B090A ;
-$colorblackgrey : #161A1D ;
-$colorred1 : #660708 ;
-$colorred2 : #A4161A ;
-$colorred3 : #BA181B ;
-$colorred4 : #E5383B ;
-$colorgrey1 : #B1A7A6 ;
-$colorgrey2 : #D3D3D3 ;
-$colorwhite1 : #F5F3F4 ;
-$colorwhite2 : #FFFFFF ;
+$colorblack : #0B090A;
+$colorblackgrey : #161A1D;
+$colorred1 : #660708;
+$colorred2 : #A4161A;
+$colorred3 : #BA181B;
+$colorred4 : #E5383B;
+$colorgrey1 : #B1A7A6;
+$colorgrey2 : #D3D3D3;
+$colorwhite1 : #F5F3F4;
+$colorwhite2 : #FFFFFF;
 
 /* Fuentes */
 
-$font1 :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-$font2 : 'Cabin', sans-serif;
-$font3 : 'Fjalla One', sans-serif;
-$font4 : 'Prompt', sans-serif ;
+$font1 :'Gill Sans',
+'Gill Sans MT',
+Calibri,
+'Trebuchet MS',
+sans-serif;
+$font2 : 'Cabin',
+sans-serif;
+$font3 : 'Fjalla One',
+sans-serif;
+$font4 : 'Prompt',
+sans-serif;
 
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -33,34 +38,34 @@ $font4 : 'Prompt', sans-serif ;
 }
 
 
-.logo img{
+.logo img {
     height: 50px;
     width: 90px;
     margin-right: 30px;
 }
 
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-    background-color: $colorblackgrey !important;  
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: $colorblackgrey !important;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(img/120px-Hamburger_icon_white.svg.png);  
-    background-color: transparent; 
+    background-image: url(img/120px-Hamburger_icon_white.svg.png);
+    background-color: transparent;
 }
 
 
-.navbar-nav{
+.navbar-nav {
     font-size: 20px;
     font-family: $font1;
     font-weight: bolder;
     font-style: italic;
 }
 
-.nav-link{
+.nav-link {
     color: $colorwhite2 !important;
 
-    &.disabled{
+    &.disabled {
         color: rgba(107, 107, 107, 0.541) !important;
     }
 
@@ -68,7 +73,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
 
 
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: $colorgrey1 !important;
 }
 
@@ -83,18 +88,18 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     display: flex;
 }
 
-.main{
+.main {
     display: flex;
     height: calc(100vh - 65px);
     width: 100%;
     height: 700px;
-    background-blend-mode:soft-light;
+    background-blend-mode: soft-light;
     position: relative;
     z-index: 2;
 }
 
 
-video{
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,7 +109,7 @@ video{
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
 }
 
-.capa{
+.capa {
     position: absolute;
     top: 0;
     left: 0;
@@ -114,18 +119,18 @@ video{
     opacity: 0.7;
 }
 
-.banner{
+.banner {
     width: 98%;
     max-height: fit-content;
 }
 
-.nright{
+.nright {
     display: flex;
     width: 100%;
     padding: 30px;
 }
 
-.nleft{
+.nleft {
     width: 100%;
 }
 
@@ -137,50 +142,50 @@ video{
 
 /* inicia titulos del banner */
 
-.fecha{
+.fecha {
     width: 100%;
     color: $colorwhite2;
     padding: 25px 0px 50px 50px;
     font-family: $font1;
 
-    h1{
+    h1 {
         font-size: 135px;
-        text-transform:uppercase;
-        font-style:italic;
+        text-transform: uppercase;
+        font-style: italic;
         text-shadow: 5px 5px 3px $colorblack;
         font-weight: bolder;
     }
 
-    h2{
+    h2 {
         margin-top: 3px;
         text-transform: uppercase;
-        font-weight:lighter;
+        font-weight: lighter;
         font-size: 27px;
         margin-bottom: 12px;
         letter-spacing: 5px;
         text-shadow: 2px 3px 3px $colorblack;
     }
 
-    h3{
+    h3 {
         text-transform: uppercase;
-        font-weight:lighter;
+        font-weight: lighter;
         font-size: 20px;
         text-shadow: 3px 3px 3px $colorblack;
     }
-    
-    h4{
+
+    h4 {
         text-transform: uppercase;
-        font-weight:lighter;
+        font-weight: lighter;
         font-size: 16px;
         text-shadow: 2px 2px 2px $colorblack;
-    
+
     }
-    
+
 
 }
 
 
-.descpartido{
+.descpartido {
     padding: 10px;
     margin-top: 30px;
     margin-right: 60px;
@@ -199,7 +204,7 @@ video{
 
 /* inicia card del banner */
 
-.card2{
+.card2 {
     margin-top: 28px;
     width: 100%;
     background: linear-gradient(270deg, #D3D3D3 5%, #F5F3F4 100%);
@@ -218,22 +223,22 @@ video{
     border-top-left-radius: 5px;
 
 
-    img{
+    img {
         position: absolute;
         top: 17px;
         right: 15px;
         height: 55px;
     }
 
-    h3{
+    h3 {
         font-family: $font1;
         text-transform: uppercase;
         font-weight: 700;
         font-style: italic;
         color: $colorwhite2;
     }
-    
-    p{
+
+    p {
         font-family: $font1;
         text-transform: uppercase;
         font-weight: 700;
@@ -244,17 +249,17 @@ video{
 
 
 
-.escudos{
+.escudos {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
 
-    img{
+    img {
         max-width: 65px;
     }
-    
-    span{
+
+    span {
         margin: 0 30px;
         font-size: 24px;
         font-weight: 700;
@@ -262,7 +267,7 @@ video{
 }
 
 
-.equipos{
+.equipos {
     place-items: center;
     padding: 0 15px 15px;
     text-align: center;
@@ -273,16 +278,16 @@ video{
     text-transform: uppercase;
     margin: 0 5px;
 
-    span{
+    span {
         margin-right: 30px;
         margin-left: 5px;
     }
 }
 
 
-.entradas{
+.entradas {
     margin-top: 10px;
-    padding-top:5px ;
+    padding-top: 5px;
     text-align: center;
     justify-content: center;
     line-height: 5px;
@@ -291,30 +296,30 @@ video{
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.651);
     border: 1px solid rgba(163, 163, 163, 0.678);
 
-    h4{
+    h4 {
         color: $colorblackgrey;
         text-transform: uppercase;
         font-family: $font1;
         font-weight: bolder;
         font-size: 22px;
         word-spacing: 5px;
-        text-shadow: 1px 1px 2px rgb(168, 167, 167); 
+        text-shadow: 1px 1px 2px rgb(168, 167, 167);
     }
-    
-    img{
+
+    img {
         max-width: 85px;
     }
 
-    &:hover{
+    &:hover {
         transform: scale(1.02);
         transition: all 0.3s;
-        filter: contrast(120%); 
+        filter: contrast(120%);
     }
 
 }
 
 
-.entradas h4:hover{
+.entradas h4:hover {
     color: $colorred4;
 }
 
@@ -330,11 +335,11 @@ video{
 
 
 
-.mid{
+.mid {
     height: auto;
     background-image: url(img/fondo.jpg);
-    background-blend-mode:soft-light;
-    background-size:cover;
+    background-blend-mode: soft-light;
+    background-size: cover;
     background-color: rgba(20, 1, 1, 0.74);
     padding: 30px;
     padding-bottom: 5px;
@@ -344,12 +349,12 @@ video{
     color: $colorwhite2;
     text-transform: uppercase;
     font-family: $font1;
-    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432); 
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.432);
     text-align: center;
 
-    h2{
+    h2 {
         font-size: 40px;
-        font-weight:550;
+        font-weight: 550;
         padding: 5px;
     }
 }
@@ -361,15 +366,15 @@ video{
 /* ------------ CONTENEDOR 1 ------------ */
 /* -------------------------------------- */
 
-.cont.cont1{
+.cont.cont1 {
     padding: 15px;
     height: 730px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 350px  350px  350px ;
-    grid-template-areas: 
-    "img1 img2 img3"
-    "img4 img5 img6"
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6"
     ;
     grid-gap: 10px;
     margin-bottom: 50px;
@@ -377,31 +382,31 @@ video{
 
 /* ------------ CONTENEDOR 1 IMG AND HOVER ------------ */
 
-.img{
+.img {
     background-size: cover;
     background-position: center;
     border-radius: 3px;
 }
 
-.img:hover{
+.img:hover {
     transform: scale(1.04);
     transition: all 0.3s;
     box-shadow: 0 0 5px $colorblack;
-    cursor:pointer;
-    filter: contrast(120%); 
+    cursor: pointer;
+    filter: contrast(120%);
 
 }
 
 /* ------------ CONTENEDOR 1 IMG1 ------------ */
 
 
-.desc1{
+.desc1 {
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
-    button{
+    button {
         background-color: $colorred3;
         font-family: $font1;
         color: $colorwhite2;
@@ -414,28 +419,28 @@ video{
     }
 }
 
-.img1{
+.img1 {
     grid-area: img1;
     background-image: url(img/noticia1.jpg);
 }
 
-.img{
-    h1{
+.img {
+    h1 {
         font-size: 22px;
         font-family: $font1;
         color: $colorwhite2;
-        text-align:left;
-        text-shadow:2px 2px 3px rgba(0, 0, 0, 0.432); 
+        text-align: left;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
         font-weight: 500;
     }
-    
-    h3{
+
+    h3 {
         font-family: $font4;
         color: $colorwhite2;
-        text-align:left;
+        text-align: left;
         font-size: 12px;
-        text-shadow:5px 5px 4px rgba(0, 0, 0, 0.432);   
-        font-weight: lighter;  
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.432);
+        font-weight: lighter;
         text-transform: uppercase;
     }
 
@@ -446,13 +451,13 @@ video{
 
 /* ------------ CONTENEDOR 1 IMG2 ------------ */
 
-.desc2{
+.desc2 {
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
-    button{
+    button {
         background-color: $colorred3;
         font-family: $font1;
         color: $colorwhite2;
@@ -465,7 +470,7 @@ video{
     }
 }
 
-.img2{
+.img2 {
     grid-area: img2;
     background-image: url(img/noticia2.jpg);
 
@@ -475,13 +480,13 @@ video{
 
 /* ------------ CONTENEDOR 1 IMG3 ------------ */
 
-.desc3{
+.desc3 {
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
-    button{
+    button {
         background-color: $colorred3;
         font-family: $font1;
         color: $colorwhite2;
@@ -494,7 +499,7 @@ video{
     }
 }
 
-.img3{
+.img3 {
     grid-area: img3;
     background-image: url(img/noticia3.jpg);
 
@@ -506,13 +511,13 @@ video{
 
 
 /* ------------ CONTENEDOR 1 IMG4 ------------ */
-.desc4{
+.desc4 {
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
-    button{
+    button {
         background-color: $colorred3;
         font-family: $font1;
         color: $colorwhite2;
@@ -525,7 +530,7 @@ video{
     }
 }
 
-.img4{
+.img4 {
     grid-area: img4;
     background-image: url(img/noticia4.jpg);
 
@@ -535,13 +540,13 @@ video{
 
 /* ------------ CONTENEDOR 1 IMG5 ------------ */
 
-.desc5{
+.desc5 {
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
-    button{
+    button {
         background-color: $colorred3;
         font-family: $font1;
         color: $colorwhite2;
@@ -554,7 +559,7 @@ video{
     }
 }
 
-.img5{
+.img5 {
     grid-area: img5;
     background-image: url(img/noticia5.jpg);
 
@@ -563,13 +568,13 @@ video{
 
 /* ------------ CONTENEDOR 1 IMG6 ------------ */
 
-.desc6{
+.desc6 {
     height: 120px;
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
-    button{
+    button {
         background-color: $colorred3;
         font-family: $font1;
         color: $colorwhite2;
@@ -582,7 +587,7 @@ video{
     }
 }
 
-.img6{
+.img6 {
     grid-area: img6;
     background-image: url(img/noticia6.jpg);
 
@@ -593,11 +598,11 @@ video{
 /* ------- MIDBOT - TERCER MODULO  -------- */
 /* -------------------------------------- */
 
-.midbot{
+.midbot {
     height: auto;
-    background-size:cover;
+    background-size: cover;
     padding: 10px;
-    background-blend-mode:soft-light;
+    background-blend-mode: soft-light;
     background: linear-gradient(270deg, $colorred1 5%, $colorred4 100%);
     place-items: center;
     border-radius: 5px;
@@ -605,34 +610,34 @@ video{
     margin-bottom: 70px;
 }
 
-.col{
+.col {
     place-items: center;
 }
 
-.card{
+.card {
     width: 100%;
     place-items: center;
     text-align: center;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
 
-    &:hover{
-        cursor:pointer; 
+    &:hover {
+        cursor: pointer;
     }
 
-    h6{
+    h6 {
         color: $colorred3;
         font-size: large;
     }
 
-    h5{
+    h5 {
         font-size: 18px !important;
     }
-    
+
 }
 
 
-.camisetabutton{
+.camisetabutton {
     padding: 2px;
     border-radius: 10px;
     padding-left: 20px;
@@ -642,17 +647,17 @@ video{
     color: $colorblack;
     border-color: $colorred2;
 
-    &:hover{
+    &:hover {
         transform: scale(1.01);
         transition: all 0.3s;
     }
 }
 
-.tiendapincha{
+.tiendapincha {
     height: 80px;
 
-    &:hover{
-        cursor:pointer; 
+    &:hover {
+        cursor: pointer;
         transform: scale(1.02);
         transition: all 0.3s;
     }
@@ -660,58 +665,70 @@ video{
 
 /*  ------------ FOOTER ------------ */
 
-footer{
+footer {
     background-color: $colorblackgrey;
     color: $colorwhite2;
     text-align: center;
     font-size: 15px;
     padding: 20px;
-    font-family:$font1 ;
+    font-family: $font1;
     text-transform: capitalize;
     height: auto;
 
-    p{
-        text-decoration:none;
+    p {
+        text-decoration: none;
         text-transform: none;
-        
+
     }
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
 
-    i{
+    i {
         font-size: 15px;
         letter-spacing: 20px;
         color: $colorwhite2;
-        
-        &:hover{
+
+        &:hover {
             color: $colorred3;
         }
     }
-    
 
-    img{
+
+    img {
         height: 55px;
         width: auto;
-    
+
     }
 }
 
 
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*            VISTA            *//*  ------------  ------------ */
-/*  ------------  ------------ *//*          POSICIONES         *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*            VISTA            */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*          POSICIONES         */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
 
 
 
-.titposiciones{
+.titposiciones {
     font-family: $font1;
     /* background: linear-gradient(270deg, #161a1da8 5%, #0b090ace 100%); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.281)), url(./img//Fondocamisetas.jpg);
@@ -722,7 +739,7 @@ footer{
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
     padding-top: 120px;
 
-    h1{
+    h1 {
         font-weight: bolder;
         font-style: italic;
         font-size: 90px;
@@ -730,7 +747,7 @@ footer{
         text-shadow: 2px 3px 3px black;
     }
 
-    h5{
+    h5 {
         font-weight: 100;
         font-size: 18px;
         text-align: center;
@@ -744,24 +761,24 @@ footer{
 
 
 
-.tf-2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.tf-2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.nombregoleador{
+.nombregoleador {
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.thcolor{
+.thcolor {
     background-color: #161A1D;
     color: #F5F3F4;
 }
 
 .text-primary {
-    color: #000000!important;
+    color: #000000 !important;
 }
 
 
@@ -769,21 +786,21 @@ footer{
 
 /*  <!-- inicio proxpartidos --> */
 
-.card-body{
+.card-body {
     width: 100%;
     text-align: center;
     padding: 10px;
 
-    h3{
+    h3 {
         color: $colorgrey1;
         text-transform: uppercase;
         font-size: 11px;
-        font-family: $font1 ;
+        font-family: $font1;
     }
-    
-    h4{
+
+    h4 {
         color: $colorblackgrey;
-        font-family:$font1;
+        font-family: $font1;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 17px;
@@ -791,7 +808,7 @@ footer{
     }
 }
 
-.cardpartpos{
+.cardpartpos {
     background-color: #f1f0f052;
     border-radius: 5px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.651);
@@ -799,26 +816,26 @@ footer{
 }
 
 
-.partidospos{
+.partidospos {
     height: auto;
     padding: 15px;
-    
+
 }
 
 
-.eqpos{
+.eqpos {
     display: flex;
     place-content: center;
 }
 
-.eqnamelogo{
+.eqnamelogo {
     display: grid;
     place-items: center;
 
-    img{
+    img {
         height: 45px;
     }
-    
+
 }
 
 
@@ -828,16 +845,28 @@ footer{
 
 
 
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*            VISTA            *//*  ------------  ------------ */
-/*  ------------  ------------ *//*           PARTIDOS         *//*  ------------   ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*            VISTA            */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*           PARTIDOS         */
+/*  ------------   ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
 
 
 
-.titfixture{
+.titfixture {
     font-family: $font1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.137)), url(./img//fixture.jpg);
     background-position-y: 25%;
@@ -846,8 +875,9 @@ footer{
     height: 300px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
     padding-top: 120px;
+    margin-bottom: 35px;
 
-    h1{
+    h1 {
         font-weight: bolder;
         font-style: italic;
         font-size: 90px;
@@ -855,7 +885,7 @@ footer{
         text-shadow: 2px 3px 3px black;
     }
 
-    h5{
+    h5 {
         font-weight: 100;
         font-size: 18px;
         text-align: center;
@@ -865,9 +895,35 @@ footer{
     }
 }
 
-.fixture{
-    height: 1200px;
+.titfixturemes{
+    font-family: $font3;
+    font-weight: 900;
+    font-size: 40px;
+    padding-left: 30px;
+}
 
+.fixture {
+    height: auto;
+}
+
+.partidostotal{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.fichapartidos{
+    border: 2px solid $colorred3;
+    border-radius: 4px;
+    // padding-left: 70px;
+    // padding-right: 70px;
+    padding: 5px 75px 5px 75px;
+    font-family: $font1;
+    font-style: italic;
+    color: $colorred3;
+}
+
+.partidosfecha {
+    font-family: $font1;
 }
 
 
@@ -877,79 +933,88 @@ footer{
 
 
 
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*         MEDIAQUERY          */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
 
 
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*         MEDIAQUERY          *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-/*  ------------  ------------ *//*  ------------  ------------ *//*  ------------  ------------ */
-
-
-@media only screen and (min-width:1600px){
+@media only screen and (min-width:1600px) {
 
 
 
-    .fecha h1{
+    .fecha h1 {
         font-size: 185px;
     }
 
-    .fecha h2{
+    .fecha h2 {
         font-size: 38px;
         margin-bottom: 12px;
         letter-spacing: 5px;
     }
 
-    .fecha h3{
+    .fecha h3 {
         font-size: 27px;
     }
 
-    .fecha h4{
+    .fecha h4 {
         font-size: 26px;
     }
 
-    
+
 }
 
-@media only screen and (max-width:570px){
+@media only screen and (max-width:570px) {
 
-    .fecha{
+    .fecha {
         padding: 50px !important;
     }
 
-    .fecha h1{
+    .fecha h1 {
         font-size: 75px !important;
         text-align: center;
-    }  
+    }
 
-    .fecha h2{
-        font-size: 17px !important ;
+    .fecha h2 {
+        font-size: 17px !important;
         margin-top: 30px;
         text-align: center;
     }
-    .fecha h3{
+
+    .fecha h3 {
         font-size: 18px !important;
         margin-top: 40px;
         text-align: center;
     }
 
-    .fecha h4{
+    .fecha h4 {
         font-size: 17px !important;
         margin-top: 55px;
         text-align: center;
     }
 
-    .descpartido{
+    .descpartido {
         place-content: center !important;
         margin-top: 10px;
         width: 100%;
     }
 
-    .img h1{
+    .img h1 {
         font-size: 20px;
     }
-    
-    .img{
+
+    .img {
         background-size: cover;
         background-position: top;
     }
@@ -962,57 +1027,57 @@ footer{
 
 @media only screen and (max-width:1300px) and (min-width: 900px) {
 
-    .fecha h1{
+    .fecha h1 {
         font-size: 95px;
     }
 
-    .fecha h2{
+    .fecha h2 {
         font-size: 18px;
         margin-bottom: 12px;
         letter-spacing: 4px;
     }
 
-    .fecha h3{
+    .fecha h3 {
         font-size: 13px;
     }
 
-    .fecha h4{
+    .fecha h4 {
         font-size: 17px;
     }
-    
-    .fecha{
+
+    .fecha {
         padding-bottom: 0;
     }
 
-    .nright{
-        place-content: center ;
+    .nright {
+        place-content: center;
     }
 
-    .card2{
+    .card2 {
         width: 70%;
     }
 
-    .img{
+    .img {
         background-size: cover;
         background-position: top;
     }
 
 
-    .cont.cont1{
+    .cont.cont1 {
         padding: 15px;
         height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 350px  350px ;
-        grid-template-areas: 
-    
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
+        grid-template-rows: 350px 350px;
+        grid-template-areas:
+
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
         ;
     }
 
-    .titposiciones h1{
+    .titposiciones h1 {
         padding-top: 150px;
         font-size: 75px;
         text-align: center;
@@ -1021,32 +1086,32 @@ footer{
 }
 
 
-@media only screen and (max-width:900px) and (min-width: 320px){
+@media only screen and (max-width:900px) and (min-width: 320px) {
 
-    .cont.cont1{
+    .cont.cont1 {
         padding: 15px;
         height: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 350px  350px 350px;
-        grid-template-areas: 
-    
-        "img1 img1 img1 "
-        "img2 img2 img2 "
-        "img3 img3 img3 "
-        "img4 img4 img4 "
-        "img5 img5 img5 "
-        "img6 img6 img6 "
+        grid-template-rows: 350px 350px 350px;
+        grid-template-areas:
+
+            "img1 img1 img1 "
+            "img2 img2 img2 "
+            "img3 img3 img3 "
+            "img4 img4 img4 "
+            "img5 img5 img5 "
+            "img6 img6 img6 "
         ;
     }
 
-    .titposiciones h1{
+    .titposiciones h1 {
         padding-top: 150px;
         font-size: 40px;
         text-align: center;
     }
 
-    .sec h2{
+    .sec h2 {
         font-size: 25px;
 
     }
