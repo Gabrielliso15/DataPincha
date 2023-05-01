@@ -783,6 +783,71 @@ footer p {
   height: 25px;
 }
 
+.fichapartido1 {
+  height: auto;
+}
+
+.titfichapartidox {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: linear-gradient(rgba(180, 5, 5, 0.664), rgba(0, 0, 0, 0.945)), url(./img/estadio\ bragantino.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  height: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.521);
+  padding-top: 20px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+.titfichapartidox h1 {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+}
+.titfichapartidox h5 {
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.btn-per {
+  color: #fff;
+  background-color: #BA181B;
+  border-color: #BA181B;
+}
+
+.btn-emp {
+  color: #fff;
+  background-color: rgb(224, 192, 11);
+  border-color: rgb(224, 192, 11);
+}
+
+.btn-gan {
+  color: #fff;
+  background-color: rgb(58, 190, 6);
+  border-color: rgb(58, 190, 6);
+}
+
+.comollegan {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+  padding: 45px 0 20px 15px;
+}
+
+.cardpartficha {
+  background-color: rgba(255, 255, 255, 0.3098039216);
+  border-radius: 15px;
+  height: auto;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.411);
+}
+
 /*  ------------  ------------ */
 /*  ------------  ------------ */
 /*  ------------  ------------ */
@@ -860,6 +925,12 @@ footer p {
   }
   .titposiciones h1 {
     font-size: 45px;
+  }
+  .titfixturemes {
+    text-align: center;
+    font-size: 27px;
+    padding: 0;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (max-width: 1300px) and (min-width: 900px) {
