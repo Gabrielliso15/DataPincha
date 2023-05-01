@@ -873,7 +873,7 @@ footer {
     background-size: cover;
     color: $colorwhite2;
     height: 300px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.521);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.521);
     padding-top: 120px;
     margin-bottom: 35px;
 
@@ -931,14 +931,27 @@ footer {
     }
 }
 
+
+.fichapartidosdisabled{
+    border: 2px solid $colorgrey1;
+    border-radius: 4px;
+    // padding-left: 70px;
+    // padding-right: 70px;
+    padding: 5px 75px 5px 75px;
+    font-family: $font1;
+    font-style: italic;
+    color: $colorgrey1;
+
+}
+
 .partidosfecha {
     font-family: $font1;
 }
 
 .partidosliga{
     display: flex;
-    width: 96%;
     margin-bottom: 30px;
+    width: 97%;
 
     h3{
         font-weight: bolder;
@@ -947,7 +960,7 @@ footer {
         font-size: 16px;
         padding-left: 15px;
         font-style: italic;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgb(6, 160, 165);
     }
 
     img{
