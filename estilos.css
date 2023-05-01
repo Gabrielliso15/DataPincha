@@ -652,7 +652,7 @@ footer p {
 .cardpartpos {
   background-color: rgba(241, 240, 240, 0.3215686275);
   border-radius: 5px;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.651);
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.651);
 }
 
 .partidospos {
@@ -787,7 +787,7 @@ footer p {
   height: auto;
 }
 
-.titfichapartidox {
+.titfichapartido1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-image: linear-gradient(rgba(180, 5, 5, 0.664), rgba(0, 0, 0, 0.945)), url(./img/estadio\ bragantino.jpg);
   background-size: cover;
@@ -799,14 +799,42 @@ footer p {
   margin-bottom: 35px;
   width: 100%;
 }
-.titfichapartidox h1 {
+.titfichapartido1 h1 {
   font-weight: bolder;
   font-style: italic;
   font-size: 90px;
   text-align: center;
   text-shadow: 2px 3px 3px black;
 }
-.titfichapartidox h5 {
+.titfichapartido1 h5 {
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titfichapartido2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: linear-gradient(rgba(255, 9, 9, 0.384), rgb(0, 0, 0)), url(./img/estadio\ uno.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  height: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.521);
+  padding-top: 20px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+.titfichapartido2 h1 {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+}
+.titfichapartido2 h5 {
   font-weight: 100;
   font-size: 18px;
   text-align: center;
@@ -843,9 +871,20 @@ footer p {
 
 .cardpartficha {
   background-color: rgba(255, 255, 255, 0.3098039216);
-  border-radius: 15px;
+  border-radius: 2px;
   height: auto;
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.411);
+}
+
+.matchficha h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.matchficha h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200;
 }
 
 /*  ------------  ------------ */
@@ -932,6 +971,13 @@ footer p {
     padding: 0;
     padding-bottom: 20px;
   }
+  .comollegan {
+    font-size: 25px;
+    text-align: center;
+  }
+  .matchficha h2 {
+    font-size: 2px;
+  }
 }
 @media only screen and (max-width: 1300px) and (min-width: 900px) {
   .fecha h1 {
@@ -981,6 +1027,14 @@ footer p {
   }
   .sec h2 {
     font-size: 25px;
+  }
+  .matchficha h2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 15px;
+  }
+  .matchficha h3 {
+    font-size: 12px;
+    text-align: center;
   }
 }
 /* -------------------------------------- */
