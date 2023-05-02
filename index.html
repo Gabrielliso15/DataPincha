@@ -12,6 +12,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./img/FotoFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>DataPincha | HOME</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
         <!-- navbar - inicia -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <div href="" class="logo">
-                <img src="img/LogoNav.png" alt="logo empresa" />
-            </div>
+            <a href="./index.html" class="logo">
+                <img src="../img/LogoNav.png" alt="logo empresa" />
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +36,7 @@
                         <a class="nav-link" href="./vistas/posiciones.html">POSICIONES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">NOTICIAS</a>
+                        <a class="nav-link" href="./vistas/noticias.html">NOTICIAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./vistas/fixture.html">FIXTURE</a>
@@ -110,42 +111,42 @@
                 <h2>últimas noticias</h2>
             </div>
             <section class="cont cont1">
-                <div class="img img1 img-fluid ">
+                <div class="img img1 img-fluid " data-aos="zoom-in-right" data-aos-duration="500">
                     <div class="desc1">
                         <h3>16 Abril 2023</h3>
                         <h1>Paridad con Central</h1>
                         <button> LEER MÁS</button>
                     </div>
                 </div>
-                <div class="img img2">
+                <div class="img img2" data-aos="zoom-in" data-aos-duration="500" >
                     <div class="desc2">
                         <h3>15 Abril 2023</h3>
                         <h1>"El equipo entendio los momentos"</h1>
                         <button> LEER MÁS</button>
                     </div>
                 </div>
-                <div class="img img3">
+                <div class="img img3" data-aos="zoom-in-left" data-aos-duration="500">
                     <div class="desc3">
                         <h3>15 Abril 2023</h3>
                         <h1>Triunfazo agónico en la Bombonera</h1>
                         <button> LEER MÁS</button>
                     </div>
                 </div>
-                <div class="img img4">
+                <div class="img img4" data-aos="zoom-in-right" data-aos-duration="500">
                     <div class="desc4">
                         <h3>14 Abril 2023</h3>
                         <h1>Gran jornada en las ligas regionales</h1>
                         <button> LEER MÁS</button>
                     </div>
                 </div>
-                <div class="img img5">
+                <div class="img img5" data-aos="zoom-in" data-aos-duration="500">
                     <div class="desc5">
                         <h3>14 abril 2023</h3>
                         <h1>Venta de generales para SOCIOS </h1>
                         <button> LEER MÁS</button>
                     </div>
                 </div>
-                <div class="img img6">
+                <div class="img img6" data-aos="zoom-in-left" data-aos-duration="500">
                     <div class="desc6">
                         <h3>13 Abril 2023</h3>
                         <h1>Los elegidos para enfrentar a Tacuary</h1>
@@ -160,8 +161,8 @@
                     </div>
                 </a>
             </div>
-            <section class="midbot">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <section class="midbot" >
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4" >
                     <div class="col mb-4">
                         <div class="card">
                             <img src="./img/camiseta1.png" class="card-img-top img-fluid" alt="...">
@@ -241,6 +242,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </body>
 
 </html>

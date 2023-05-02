@@ -147,6 +147,10 @@ video {
     padding: 25px 0px 50px 50px;
     font-family: $font1;
 
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+
     h1 {
         font-size: 135px;
         text-transform: uppercase;
@@ -184,12 +188,28 @@ video {
 }
 
 
+
 .descpartido {
     padding: 10px;
     margin-top: 30px;
     margin-right: 60px;
     background-color: rgba(0, 0, 0, 0.295);
     border-radius: 7px;
+}
+
+
+
+@keyframes aparecer{
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        
+    }
+
 }
 
 /* fin titulos del banner */
@@ -210,6 +230,10 @@ video {
     height: fit-content;
     box-shadow: 5px 5px 7px rgba(172, 170, 170, 0.267);
     border-radius: 5px;
+
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
 .card2-title {
@@ -377,6 +401,8 @@ video {
     ;
     grid-gap: 10px;
     margin-bottom: 50px;
+
+    
 }
 
 /* ------------ CONTENEDOR 1 IMG AND HOVER ------------ */
@@ -738,6 +764,10 @@ footer {
     padding-top: 120px;
     margin-bottom: 35px;
 
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+
     h1 {
         font-weight: bolder;
         font-style: italic;
@@ -875,6 +905,10 @@ footer {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.521);
     padding-top: 120px;
     margin-bottom: 35px;
+    
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 
     h1 {
         font-weight: bolder;
@@ -983,6 +1017,9 @@ footer {
     padding-top: 20px;
     margin-bottom: 35px;
     width: 100%;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 
     h1 {
         font-weight: bolder;
@@ -1015,6 +1052,10 @@ footer {
     padding-top: 20px;
     margin-bottom: 35px;
     width: 100%;
+
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 
     h1 {
         font-weight: bolder;
