@@ -1086,6 +1086,32 @@ footer p {
   font-size: 25px;
 }
 
+.vermas {
+  background-color: #F5F3F4;
+  color: #161A1D;
+  text-align: center;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  padding: 7px 60px 0 60px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.575);
+}
+.vermas:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.vermas h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 /*  ------------  ------------ */
 /*  ------------  ------------ */
 /*  ------------  ------------ */
