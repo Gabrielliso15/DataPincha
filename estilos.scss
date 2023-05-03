@@ -1154,7 +1154,7 @@ footer {
         "img1not  img1not  img2not "
         "img3not  img4not  img5not"
         "img6not  img7not img8not"
-        "img9not img10not img11not"
+        "img9not img10not img10not"
     ;
     grid-gap: 10px;
     margin-bottom: 50px;
@@ -1167,7 +1167,7 @@ footer {
 
 
 
-.desc1not,.desc2not,.desc3not,.desc4not,.desc4not,.desc5not,.desc6not,.desc7not,.desc8not,.desc9not,.desc10not,.desc11not {
+.desc1not,.desc2not,.desc3not,.desc4not,.desc4not,.desc5not,.desc6not,.desc7not,.desc8not,.desc9not,.desc10not{
     margin-top: 260px;
 
     .btndisabled {
@@ -1237,19 +1237,13 @@ footer {
 
 .img10not {
     grid-area: img10not;
-    background-color: #000000;
-    // background-image: url(img/noticia1.jpg);
-}
-
-.img11not {
-    grid-area: img11not;
-    background-color: #000000;
-    // background-image: url(img/noticia1.jpg);
+    // background-color: #000000;
+    background-image: url(./img/sappa.jpg);
 }
 
 
 
-.desc7not,.desc8not,.desc9not,.desc10not,.desc11not{
+.desc7not,.desc8not,.desc9not,.desc10not{
     @extend .desc1;
 }
 
@@ -1265,9 +1259,13 @@ footer {
     background-image: linear-gradient(rgba(255, 0, 0, 0.562), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
     background-size:contain;
 
+    a{
+        color: white;
+    }
+
 
     .buttonnoticias{
-
+        
         &:hover {
             transform: scale(1.03);
             transition: all 0.3s;
@@ -1295,6 +1293,64 @@ footer {
     }
 
 
+}
+
+
+/* ------------ VISTA COMPLEMENTARIA NOTICIA ------------ */
+
+.noticiacomple{
+    height: auto;
+    padding-top: 10px;
+
+
+
+    .ntcompleimg{
+        width: 100%;
+        height: 500px;
+
+        img{
+            height: 70%;
+        }
+    }
+
+    .ntcompletitle{
+        padding: 70px 20px 20px 20px;
+        background-color: $colorwhite1;
+
+        h1{
+            font-family: $font2;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+
+        p{
+            font-family: $font2;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    .ntcomple{
+        padding: 50px 20px 100px 20px;
+        background-color: $colorwhite1;
+        p{
+            font-family: $font2;
+            font-size: 17px;
+        }
+
+        h1{
+            font-family: $font1;
+            font-weight: bolder;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: 25px;
+        }
+    }
+    
 }
 
 
@@ -1429,6 +1485,8 @@ footer {
         }
     }
 
+
+
 }
 
 
@@ -1499,12 +1557,21 @@ footer {
             "img4not  img5not"
             "img6not img7not"
             "img8not img9not"
-            "img10not img11not"
+            "img10not img10not"
         ;
         grid-gap: 10px;
         margin-bottom: 50px;
     
         
+    }
+
+    .titnoticias{
+        background-size:cover;
+        h1{
+            font-size: 35px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
     }
 
 
@@ -1567,7 +1634,6 @@ footer {
             "img8not  img8not img8not"
             "img9not  img9not img9not"
             "img10not  img10not img10not"
-            "img11not  img11not img11not"
 
         ;
         grid-gap: 10px;
@@ -1578,8 +1644,46 @@ footer {
 
     .titnoticias{
         background-size:cover;
+        h1{
+            font-size: 17px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
     }
 
+    .desc1not{
+        h1{
+            font-size: 15px !important;
+        }
+    }
+
+    .ntcompleimg{
+        background-position: center;
+    }
+
+    .ntcompletitle{
+        text-align: center;
+        h1{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .ntcomple{
+        text-align: center;
+
+        p{
+            font-size: 18px !important;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 13px !important;
+        }
+    }
 
 }
 

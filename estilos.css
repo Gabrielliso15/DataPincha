@@ -320,13 +320,13 @@ video {
 }
 
 /* ------------ CONTENEDOR 1 IMG1 ------------ */
-.desc1, .desc1not, .desc2not, .desc3not, .desc4not, .desc5not, .desc6not, .desc7not, .desc8not, .desc9not, .desc10not, .desc11not {
+.desc1, .desc1not, .desc2not, .desc3not, .desc4not, .desc5not, .desc6not, .desc7not, .desc8not, .desc9not, .desc10not {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-.desc1 button, .desc1not button, .desc2not button, .desc3not button, .desc4not button, .desc5not button, .desc6not button, .desc7not button, .desc8not button, .desc9not button, .desc10not button, .desc11not button {
+.desc1 button, .desc1not button, .desc2not button, .desc3not button, .desc4not button, .desc5not button, .desc6not button, .desc7not button, .desc8not button, .desc9not button, .desc10not button {
   background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #FFFFFF;
@@ -938,16 +938,16 @@ footer p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 380px 380px 380px;
-  grid-template-areas: "img1not  img1not  img2not " "img3not  img4not  img5not" "img6not  img7not img8not" "img9not img10not img11not";
+  grid-template-areas: "img1not  img1not  img2not " "img3not  img4not  img5not" "img6not  img7not img8not" "img9not img10not img10not";
   grid-gap: 10px;
   margin-bottom: 50px;
 }
 
 /* ------------ CONTENEDOR VISTA NOTICIAS ------------ */
-.desc1not, .desc2not, .desc3not, .desc4not, .desc4not, .desc5not, .desc6not, .desc7not, .desc8not, .desc9not, .desc10not, .desc11not {
+.desc1not, .desc2not, .desc3not, .desc4not, .desc4not, .desc5not, .desc6not, .desc7not, .desc8not, .desc9not, .desc10not {
   margin-top: 260px;
 }
-.desc1not .btndisabled, .desc2not .btndisabled, .desc3not .btndisabled, .desc4not .btndisabled, .desc4not .btndisabled, .desc5not .btndisabled, .desc6not .btndisabled, .desc7not .btndisabled, .desc8not .btndisabled, .desc9not .btndisabled, .desc10not .btndisabled, .desc11not .btndisabled {
+.desc1not .btndisabled, .desc2not .btndisabled, .desc3not .btndisabled, .desc4not .btndisabled, .desc4not .btndisabled, .desc5not .btndisabled, .desc6not .btndisabled, .desc7not .btndisabled, .desc8not .btndisabled, .desc9not .btndisabled, .desc10not .btndisabled {
   background-color: #B1A7A6;
   color: #FFFFFF;
 }
@@ -1001,12 +1001,7 @@ footer p {
 
 .img10not {
   grid-area: img10not;
-  background-color: #000000;
-}
-
-.img11not {
-  grid-area: img11not;
-  background-color: #000000;
+  background-image: url(./img/sappa.jpg);
 }
 
 .titnoticias {
@@ -1017,6 +1012,9 @@ footer p {
   padding-top: 40px;
   font-size: 50px;
   color: 0;
+}
+.titnoticias a {
+  color: white;
 }
 .titnoticias .buttonnoticias {
   background-color: #BA181B;
@@ -1041,6 +1039,51 @@ footer p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+
+/* ------------ VISTA COMPLEMENTARIA NOTICIA ------------ */
+.noticiacomple {
+  height: auto;
+  padding-top: 10px;
+}
+.noticiacomple .ntcompleimg {
+  width: 100%;
+  height: 500px;
+}
+.noticiacomple .ntcompleimg img {
+  height: 70%;
+}
+.noticiacomple .ntcompletitle {
+  padding: 70px 20px 20px 20px;
+  background-color: #F5F3F4;
+}
+.noticiacomple .ntcompletitle h1 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.noticiacomple .ntcompletitle p {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.noticiacomple .ntcomple {
+  padding: 50px 20px 100px 20px;
+  background-color: #F5F3F4;
+}
+.noticiacomple .ntcomple p {
+  font-family: "Cabin", sans-serif;
+  font-size: 17px;
+}
+.noticiacomple .ntcomple h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 25px;
 }
 
 /*  ------------  ------------ */
@@ -1177,9 +1220,17 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 380px 380px;
-    grid-template-areas: "img1not  img1not" "img2not  img3not" "img4not  img5not" "img6not img7not" "img8not img9not" "img10not img11not";
+    grid-template-areas: "img1not  img1not" "img2not  img3not" "img4not  img5not" "img6not img7not" "img8not img9not" "img10not img10not";
     grid-gap: 10px;
     margin-bottom: 50px;
+  }
+  .titnoticias {
+    background-size: cover;
+  }
+  .titnoticias h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (max-width: 900px) and (min-width: 320px) {
@@ -1208,12 +1259,42 @@ footer p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 380px 380px 380px;
-    grid-template-areas: "img1not  img1not img1not" "img2not  img2not img2not" "img3not  img3not img3not" "img4not  img4not img4not" "img5not  img5not img5not" "img6not  img6not img6not" "img7not  img7not img7not" "img8not  img8not img8not" "img9not  img9not img9not" "img10not  img10not img10not" "img11not  img11not img11not";
+    grid-template-areas: "img1not  img1not img1not" "img2not  img2not img2not" "img3not  img3not img3not" "img4not  img4not img4not" "img5not  img5not img5not" "img6not  img6not img6not" "img7not  img7not img7not" "img8not  img8not img8not" "img9not  img9not img9not" "img10not  img10not img10not";
     grid-gap: 10px;
     margin-bottom: 50px;
   }
   .titnoticias {
     background-size: cover;
+  }
+  .titnoticias h1 {
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .desc1not h1 {
+    font-size: 15px !important;
+  }
+  .ntcompleimg {
+    background-position: center;
+  }
+  .ntcompletitle {
+    text-align: center;
+  }
+  .ntcompletitle h1 {
+    font-size: 30px;
+  }
+  .ntcompletitle p {
+    font-size: 10px;
+  }
+  .ntcomple {
+    text-align: center;
+  }
+  .ntcomple p {
+    font-size: 18px !important;
+  }
+  .ntcomple h1 {
+    text-align: center;
+    font-size: 13px !important;
   }
 }
 /* -------------------------------------- */
