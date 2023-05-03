@@ -320,13 +320,13 @@ video {
 }
 
 /* ------------ CONTENEDOR 1 IMG1 ------------ */
-.desc1 {
+.desc1, .desc1not, .desc2not, .desc3not, .desc4not, .desc5not, .desc6not, .desc7not, .desc8not, .desc9not, .desc10not, .desc11not {
   height: 120px;
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
-.desc1 button {
+.desc1 button, .desc1not button, .desc2not button, .desc3not button, .desc4not button, .desc5not button, .desc6not button, .desc7not button, .desc8not button, .desc9not button, .desc10not button, .desc11not button {
   background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #FFFFFF;
@@ -595,7 +595,7 @@ footer p {
 /*  ------------  ------------ */
 /*  ------------  ------------ */
 /*  ------------  ------------ */
-.titposiciones {
+.titposiciones, .titnoticias {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.137)), url(./img/Fondocamisetas.jpg);
   background-position-y: 25%;
@@ -609,14 +609,14 @@ footer p {
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
-.titposiciones h1 {
+.titposiciones h1, .titnoticias h1 {
   font-weight: bolder;
   font-style: italic;
   font-size: 90px;
   text-align: center;
   text-shadow: 2px 3px 3px black;
 }
-.titposiciones h5 {
+.titposiciones h5, .titnoticias h5 {
   font-weight: 100;
   font-size: 18px;
   text-align: center;
@@ -920,6 +920,136 @@ footer p {
 /*  ------------  ------------ */
 /*  ------------  ------------ */
 /*  ------------  ------------ */
+/*        NOTICIAS             */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+.contenedornoticias {
+  height: auto;
+}
+
+.contnoticias {
+  padding: 15px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 380px 380px 380px;
+  grid-template-areas: "img1not  img1not  img2not " "img3not  img4not  img5not" "img6not  img7not img8not" "img9not img10not img11not";
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+
+/* ------------ CONTENEDOR VISTA NOTICIAS ------------ */
+.desc1not, .desc2not, .desc3not, .desc4not, .desc4not, .desc5not, .desc6not, .desc7not, .desc8not, .desc9not, .desc10not, .desc11not {
+  margin-top: 260px;
+}
+.desc1not .btndisabled, .desc2not .btndisabled, .desc3not .btndisabled, .desc4not .btndisabled, .desc4not .btndisabled, .desc5not .btndisabled, .desc6not .btndisabled, .desc7not .btndisabled, .desc8not .btndisabled, .desc9not .btndisabled, .desc10not .btndisabled, .desc11not .btndisabled {
+  background-color: #B1A7A6;
+  color: #FFFFFF;
+}
+
+.img1not {
+  grid-area: img1not;
+  background-image: url(./img/noticia1.jpg);
+}
+
+.img2not {
+  grid-area: img2not;
+  background-image: url(./img/noticia2.jpg);
+}
+
+.img3not {
+  grid-area: img3not;
+  background-image: url(./img/noticia3.jpg);
+}
+
+.img4not {
+  grid-area: img4not;
+  background-image: url(./img/noticia4.jpg);
+}
+
+.img5not {
+  grid-area: img5not;
+  background-image: url(./img/noticia6.jpg);
+}
+
+.img6not {
+  grid-area: img6not;
+  background-image: url(./img/noticia7.jpg);
+  background-position-x: 10%;
+}
+
+.img7not {
+  grid-area: img7not;
+  background-image: url(./img/noticia8.jpg);
+  background-position-x: 10%;
+}
+
+.img8not {
+  grid-area: img8not;
+  background-image: url(./img/noticia9.jpg);
+}
+
+.img9not {
+  grid-area: img9not;
+  background-image: url(./img/noticia10.jpg);
+}
+
+.img10not {
+  grid-area: img10not;
+  background-color: #000000;
+}
+
+.img11not {
+  grid-area: img11not;
+  background-color: #000000;
+}
+
+.titnoticias {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.562), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
+  background-size: contain;
+}
+.titnoticias h1 {
+  padding-top: 40px;
+  font-size: 50px;
+  color: 0;
+}
+.titnoticias .buttonnoticias {
+  background-color: #BA181B;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  padding: 7px 40px 0 40px;
+}
+.titnoticias .buttonnoticias:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: #161A1D;
+  color: #FFFFFF;
+}
+.titnoticias .buttonnoticias h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
 /*         MEDIAQUERY          */
 /*  ------------  ------------ */
 /*  ------------  ------------ */
@@ -985,10 +1115,10 @@ footer p {
   .titfixture h1 {
     font-size: 60px;
   }
-  .titposiciones h5 {
+  .titposiciones h5, .titnoticias h5 {
     font-size: 13px;
   }
-  .titposiciones h1 {
+  .titposiciones h1, .titnoticias h1 {
     font-size: 45px;
   }
   .titfixturemes {
@@ -1041,6 +1171,16 @@ footer p {
     grid-template-rows: 350px 350px;
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   }
+  .contnoticias {
+    padding: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 380px 380px;
+    grid-template-areas: "img1not  img1not" "img2not  img3not" "img4not  img5not" "img6not img7not" "img8not img9not" "img10not img11not";
+    grid-gap: 10px;
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (max-width: 900px) and (min-width: 320px) {
   .cont.cont1 {
@@ -1061,6 +1201,19 @@ footer p {
   .matchficha h3 {
     font-size: 12px;
     text-align: center;
+  }
+  .contnoticias {
+    padding: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 380px 380px 380px;
+    grid-template-areas: "img1not  img1not img1not" "img2not  img2not img2not" "img3not  img3not img3not" "img4not  img4not img4not" "img5not  img5not img5not" "img6not  img6not img6not" "img7not  img7not img7not" "img8not  img8not img8not" "img9not  img9not img9not" "img10not  img10not img10not" "img11not  img11not img11not";
+    grid-gap: 10px;
+    margin-bottom: 50px;
+  }
+  .titnoticias {
+    background-size: cover;
   }
 }
 /* -------------------------------------- */
