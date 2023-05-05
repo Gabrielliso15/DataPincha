@@ -491,9 +491,9 @@ video {
   background-blend-mode: soft-light;
   background: linear-gradient(270deg, #660708 5%, #E5383B 100%);
   place-items: center;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 14px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .col {
@@ -504,7 +504,6 @@ video {
   width: 100%;
   place-items: center;
   text-align: center;
-  border-radius: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.651);
 }
 .card:hover {
@@ -520,7 +519,7 @@ video {
 
 .camisetabutton {
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-left: 20px;
   padding-right: 20px;
   text-transform: uppercase;
@@ -529,8 +528,10 @@ video {
   border-color: #A4161A;
 }
 .camisetabutton:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
   transition: all 0.3s;
+  color: #FFFFFF;
+  background-color: #BA181B;
 }
 
 .tiendapincha {
@@ -548,33 +549,52 @@ footer {
   color: #FFFFFF;
   text-align: center;
   font-size: 15px;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: capitalize;
-  height: auto;
+  height: 250px;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer a:hover {
+  color: #BA181B;
 }
 footer p {
   text-decoration: none;
   text-transform: none;
 }
-
-.redes {
+footer ul {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  list-style: none !important;
+  display: flex;
+  gap: 15px;
+}
+footer .footertext p {
+  color: #FFFFFF;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+footer .redes {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
 }
-.redes i {
-  font-size: 15px;
-  letter-spacing: 20px;
+footer .redes i {
+  font-size: 17px;
+  letter-spacing: 40px;
   color: #FFFFFF;
 }
-.redes i:hover {
+footer .redes i:hover {
   color: #BA181B;
 }
-.redes img {
-  height: 55px;
+footer .redes img {
+  height: 60px;
   width: auto;
+  margin-bottom: 20px;
 }
 
 /*  ------------  ------------ */
@@ -1321,6 +1341,64 @@ footer p {
   .ntcomple h1 {
     text-align: center;
     font-size: 13px !important;
+  }
+  footer {
+    font-size: 13px;
+    height: 310px;
+    padding-right: 20px;
+  }
+  footer .footertext p {
+    font-size: 18px;
+  }
+  footer .redes {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .redes i {
+    font-size: 17px;
+    letter-spacing: 40px;
+    color: #FFFFFF;
+  }
+  footer .redes i:hover {
+    color: #BA181B;
+  }
+  footer .redes img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 320px) {
+  footer {
+    height: 360px;
+  }
+  footer ul {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  footer .footertext p {
+    color: #FFFFFF;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 16px;
+  }
+  footer .redes {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  footer .redes i {
+    font-size: 17px;
+    letter-spacing: 20px;
+    color: #FFFFFF;
+    padding-left: 10px;
+  }
+  footer .redes i:hover {
+    color: #BA181B;
+  }
+  footer .redes img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 20px;
   }
 }
 /* -------------------------------------- */
