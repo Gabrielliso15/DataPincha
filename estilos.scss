@@ -1424,6 +1424,170 @@ footer {
 
 
 
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*         plantel             */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+/*  ------------  ------------ */
+
+
+
+.titplantel {
+    @extend .titposiciones;
+    background-image: linear-gradient(rgba(238, 8, 8, 0.342), rgba(0, 0, 0, 0.425)), url(./img/fondoplantel1.jpg);
+    background-position-y: 35%;
+
+}
+
+
+
+.mainplantel{
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.content-arqueros{
+    padding-top: 15px;
+    position: relative;
+    padding-bottom: 150px;
+
+    h2{
+        text-transform: uppercase;
+        font-family: $font1;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 65px;
+        padding: 40px 0 15px 60px;
+    }
+}
+
+.content-defensores{
+    @extend .content-arqueros;
+    padding-bottom: 150px;
+}
+
+.content-mediocampistas{
+    @extend .content-arqueros;
+    padding-bottom: 150px;
+}
+
+.content{
+    height: auto;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.jugador{
+    position: relative;
+    display: inline-block;
+    height: 370px;
+    width: 240px;
+    background-color: $colorgrey2;
+    place-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid $colorgrey2;
+    margin-bottom: 15px;
+
+    .jugadortxt{
+        display: flex;
+
+        .txtnumber{
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .txtname{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            text-transform: uppercase;
+            
+            h3{
+                font-size: 17px;
+                font-family: $font2;
+                font-weight: 200;
+                margin-bottom: 0;
+            }
+
+        }
+
+        
+    }
+}
+
+.jugadorimg{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $colorgrey2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
