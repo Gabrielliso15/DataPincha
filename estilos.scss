@@ -302,7 +302,7 @@ video {
     margin: 0 5px;
 
     span {
-        margin-right: 30px;
+        margin-right: 25px;
         margin-left: 5px;
     }
 }
@@ -1192,10 +1192,10 @@ footer {
     grid-template-areas:
         "img1not  img1not  img2not "
         "img3not  img4not  img5not"
-        "img6not  img7not img8not"
-        "img9not img10not img10not"
+        "img6not  img7not img7not"
+        "img8not img9not img10not"
     ;
-    grid-gap: 10px;
+    grid-gap: 15px;
     margin-bottom: 50px;
 
     
@@ -1289,6 +1289,10 @@ footer {
 
 
 .titnoticias{
+
+    height: 400px;
+
+
     h1{
         padding-top: 40px;
         font-size: 50px;
@@ -1397,6 +1401,7 @@ footer {
         transform: scale(1.03);
         transition: all 0.3s;
         cursor: pointer;
+        background-color:  #0B090A;
     }
 
     h2{
@@ -1408,16 +1413,15 @@ footer {
     }
 
 
-    background-color: $colorwhite1;
-    color: $colorblackgrey;
-    text-align: center;
-    border-radius: 5px;
+    background-color: $colorblackgrey;
+    color: $colorwhite2;
+    border-radius: 2px;
     width: fit-content;
     display: grid;
     place-items: center;
     margin: auto;
-    padding: 7px 60px 0 60px;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.575);
+    padding: 10px 60px 5px 60px;
+    box-shadow: 3px 4px 5x rgba(0, 0, 0, 0.575);
 }
 
 
@@ -1459,25 +1463,63 @@ footer {
 .content-arqueros{
     padding-top: 15px;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 170px;
 
     h2{
         text-transform: uppercase;
+        color: $colorwhite2;
         font-family: $font1;
         font-weight: 900;
         font-style: italic;
         font-size: 65px;
         padding: 40px 0 15px 60px;
     }
+
+    .jugador{
+        background-color: $colorblackgrey;
+        border: 5px solid $colorwhite1;
+
+        .jugadortxt{
+            color: $colorwhite2;
+        }
+    }
 }
 
 .content-defensores{
     @extend .content-arqueros;
+
+    .jugador{
+        background-color: $colorblackgrey;
+        border: 5px solid $colorblackgrey;
+
+        .jugadortxt{
+            color: $colorwhite2;
+        }
+    }
+
+    h2{
+        color: $colorwhite2;
+    }
+
     padding-bottom: 150px;
 }
 
 .content-mediocampistas{
+    @extend .content-defensores;
+
+    h2{
+        color: $colorblackgrey;
+    }
+
+    padding-bottom: 150px;
+}
+
+.content-delanteros{
     @extend .content-arqueros;
+
+    h2{
+        color: $colorwhite2;
+    }
     padding-bottom: 150px;
 }
 
@@ -1787,8 +1829,8 @@ footer {
             "img2not  img3not"
             "img4not  img5not"
             "img6not img7not"
-            "img8not img9not"
-            "img10not img10not"
+            "img8not img8not"
+            "img9not img10not"
         ;
         grid-gap: 10px;
         margin-bottom: 50px;

@@ -226,7 +226,7 @@ video {
   margin: 0 5px;
 }
 .equipos span {
-  margin-right: 30px;
+  margin-right: 25px;
   margin-left: 5px;
 }
 
@@ -958,8 +958,8 @@ footer .redes img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 380px 380px 380px;
-  grid-template-areas: "img1not  img1not  img2not " "img3not  img4not  img5not" "img6not  img7not img8not" "img9not img10not img10not";
-  grid-gap: 10px;
+  grid-template-areas: "img1not  img1not  img2not " "img3not  img4not  img5not" "img6not  img7not img7not" "img8not img9not img10not";
+  grid-gap: 15px;
   margin-bottom: 50px;
 }
 
@@ -1025,6 +1025,7 @@ footer .redes img {
 }
 
 .titnoticias {
+  height: 400px;
   background-image: linear-gradient(rgba(255, 0, 0, 0.562), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
   background-size: contain;
 }
@@ -1107,22 +1108,22 @@ footer .redes img {
 }
 
 .vermas {
-  background-color: #F5F3F4;
-  color: #161A1D;
-  text-align: center;
-  border-radius: 5px;
+  background-color: #161A1D;
+  color: #FFFFFF;
+  border-radius: 2px;
   width: -moz-fit-content;
   width: fit-content;
   display: grid;
   place-items: center;
   margin: auto;
-  padding: 7px 60px 0 60px;
-  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.575);
+  padding: 10px 60px 5px 60px;
+  box-shadow: 3px 4px 5x rgba(0, 0, 0, 0.575);
 }
 .vermas:hover {
   transform: scale(1.03);
   transition: all 0.3s;
   cursor: pointer;
+  background-color: #0B090A;
 }
 .vermas h2 {
   font-size: 20px;
@@ -1157,26 +1158,54 @@ footer .redes img {
   padding-bottom: 50px;
 }
 
-.content-arqueros, .content-mediocampistas, .content-defensores {
+.content-arqueros, .content-delanteros, .content-defensores, .content-mediocampistas {
   padding-top: 15px;
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 170px;
 }
-.content-arqueros h2, .content-mediocampistas h2, .content-defensores h2 {
+.content-arqueros h2, .content-delanteros h2, .content-defensores h2, .content-mediocampistas h2 {
   text-transform: uppercase;
+  color: #FFFFFF;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: 65px;
   padding: 40px 0 15px 60px;
 }
+.content-arqueros .jugador, .content-delanteros .jugador, .content-defensores .jugador, .content-mediocampistas .jugador {
+  background-color: #161A1D;
+  border: 5px solid #F5F3F4;
+}
+.content-arqueros .jugador .jugadortxt, .content-delanteros .jugador .jugadortxt, .content-defensores .jugador .jugadortxt, .content-mediocampistas .jugador .jugadortxt {
+  color: #FFFFFF;
+}
 
-.content-defensores {
+.content-defensores, .content-mediocampistas {
   padding-bottom: 150px;
+}
+.content-defensores .jugador, .content-mediocampistas .jugador {
+  background-color: #161A1D;
+  border: 5px solid #161A1D;
+}
+.content-defensores .jugador .jugadortxt, .content-mediocampistas .jugador .jugadortxt {
+  color: #FFFFFF;
+}
+.content-defensores h2, .content-mediocampistas h2 {
+  color: #FFFFFF;
 }
 
 .content-mediocampistas {
   padding-bottom: 150px;
+}
+.content-mediocampistas h2 {
+  color: #161A1D;
+}
+
+.content-delanteros {
+  padding-bottom: 150px;
+}
+.content-delanteros h2 {
+  color: #FFFFFF;
 }
 
 .content {
@@ -1366,7 +1395,7 @@ footer .redes img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 380px 380px;
-    grid-template-areas: "img1not  img1not" "img2not  img3not" "img4not  img5not" "img6not img7not" "img8not img9not" "img10not img10not";
+    grid-template-areas: "img1not  img1not" "img2not  img3not" "img4not  img5not" "img6not img7not" "img8not img8not" "img9not img10not";
     grid-gap: 10px;
     margin-bottom: 50px;
   }
