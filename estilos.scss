@@ -114,7 +114,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #161a1dd8 5%, #0b090aa1 100%);
+    background: linear-gradient(270deg, #000000a8 5%, #0b090a71 100%);
     opacity: 0.7;
 }
 
@@ -363,7 +363,7 @@ video {
     background-image: url(img/fondo.jpg);
     background-blend-mode: soft-light;
     background-size: cover;
-    background-color: rgba(20, 1, 1, 0.74);
+    background-color: rgba(75, 2, 2, 0.87);
     padding: 30px;
     padding-bottom: 5px;
 }
@@ -446,7 +446,8 @@ video {
 
 .img1 {
     grid-area: img1;
-    background-image: url(img/noticia1.jpg);
+    // background-image: url(img/NoticiaHome2.jpg);
+    background-color: $colorgrey1;
 }
 
 .img {
@@ -497,7 +498,8 @@ video {
 
 .img2 {
     grid-area: img2;
-    background-image: url(img/noticia2.jpg);
+    // background-image: url(img/noticia2.jpg);
+    background-color: $colorgrey1;
 
     @extend .img;
 }
@@ -526,7 +528,7 @@ video {
 
 .img3 {
     grid-area: img3;
-    background-image: url(img/noticia3.jpg);
+    background-image: url(img/NoticiaHome3.jpg);
 
     @extend .img;
 }
@@ -586,7 +588,7 @@ video {
 
 .img5 {
     grid-area: img5;
-    background-image: url(img/noticia5.jpg);
+    background-image: url(img/NoticiaHome5.jpg);
 
     @extend .img;
 }
@@ -614,7 +616,7 @@ video {
 
 .img6 {
     grid-area: img6;
-    background-image: url(img/noticia6.jpg);
+    background-image: url(img/NoticiaHome6.jpg);  
 
     @extend .img;
 }
@@ -630,9 +632,13 @@ video {
     background-blend-mode: soft-light;
     background: linear-gradient(270deg, $colorred1 5%, $colorred4 100%);
     place-items: center;
-    border-radius: 2px;
+    border-radius: 5px;
     margin: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    a{
+        color: $colorblack !important;
+    }
 }
 
 .col {
@@ -647,6 +653,8 @@ video {
 
     &:hover {
         cursor: pointer;
+        transform: scale(1.02);
+        transition: all 0.3s;
     }
 
     h6 {
@@ -684,7 +692,7 @@ video {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.02);
+        transform: scale(1.01);
         transition: all 0.3s;
     }
 }
@@ -1291,6 +1299,8 @@ footer {
 .titnoticias{
 
     height: 400px;
+    
+
 
 
     h1{
@@ -1299,7 +1309,7 @@ footer {
         color: red($color: #000000);
     }
     @extend .titposiciones;
-    background-image: linear-gradient(rgba(255, 0, 0, 0.562), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
+    background-image: linear-gradient(rgba(114, 4, 4, 0.452), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
     background-size:contain;
 
     a{
@@ -1394,6 +1404,9 @@ footer {
         }
     }
     
+    a{
+        color: $colorred3!important;
+    }
 }
 
 .vermas{
@@ -1422,6 +1435,7 @@ footer {
     margin: auto;
     padding: 10px 60px 5px 60px;
     box-shadow: 3px 4px 5x rgba(0, 0, 0, 0.575);
+
 }
 
 
@@ -1470,7 +1484,7 @@ footer {
         color: $colorwhite2;
         font-family: $font1;
         font-weight: 900;
-        font-style: italic;
+        font-style: normal;
         font-size: 65px;
         padding: 40px 0 15px 60px;
     }
@@ -1848,6 +1862,25 @@ footer {
     }
 
 
+
+
+    .content-arqueros{
+    
+        h2{
+            font-style: normal;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .content-defensores{
+    
+        h2{
+            color: $colorblackgrey;
+        }
+    }
+
+
 }
 
 
@@ -1998,17 +2031,55 @@ footer {
         
             }
         }
-        
-    
-    
     
     }
+
+
+    .content-arqueros{
+    
+        h2{
+            font-size: 50px;
+            font-style: normal;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .content-defensores{
+    
+        h2{
+            color: $colorblackgrey;
+        }
+    }
+
+    .content-arqueros{
+    
+        h2{
+            color: $colorblackgrey;
+        }
+    }
+
 
 }
 
 
 
 @media only screen and (max-width:650px) and (min-width: 320px) {
+
+
+    .equipos {
+        place-items: center;
+        padding: 0 9px 9px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0 ;
+    
+        span {
+            margin-right: 25px;
+            margin-left: 5px;
+        }
+    }
 
     footer {
         height: 360px;
@@ -2056,11 +2127,17 @@ footer {
                 margin-bottom: 20px;
         
             }
+        }    
+    }
+
+    .content-arqueros{
+    
+        h2{
+            font-size: 30px;
+            font-style: normal;
+            padding: 0;
+            text-align: center;
         }
-        
-    
-    
-    
     }
 
 
