@@ -376,7 +376,7 @@ video {
     text-align: center;
 
     h2 {
-        font-size: 40px;
+        font-size: 55px;
         font-weight: 550;
         padding: 5px;
     }
@@ -431,6 +431,10 @@ video {
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
+    h1{
+        font-family: $font2;
+    }
+
     button {
         background-color: $colorred3;
         font-family: $font1;
@@ -483,6 +487,10 @@ video {
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
+    h1{
+        font-family: $font2;
+    }
+
     button {
         background-color: $colorred3;
         font-family: $font1;
@@ -513,6 +521,10 @@ video {
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
 
+    h1{
+        font-family: $font2;
+    }
+
     button {
         background-color: $colorred3;
         font-family: $font1;
@@ -528,7 +540,8 @@ video {
 
 .img3 {
     grid-area: img3;
-    background-image: url(img/NoticiaHome3.jpg);
+    background-color: $colorgrey1;
+    // background-image: url(img/NoticiaHome7.jpg);
 
     @extend .img;
 }
@@ -543,6 +556,11 @@ video {
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    h1{
+        font-family: $font2;
+    }
+    
 
     button {
         background-color: $colorred3;
@@ -559,7 +577,7 @@ video {
 
 .img4 {
     grid-area: img4;
-    background-image: url(img/noticia4.jpg);
+    background-image: url(img/NoticiaHome4.jpg);
 
     @extend .img;
 }
@@ -572,6 +590,10 @@ video {
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    h1{
+        font-family: $font2;
+    }
 
     button {
         background-color: $colorred3;
@@ -600,6 +622,10 @@ video {
     margin-top: 230px;
     background-color: rgba(0, 0, 0, 0.658);
     padding: 10px;
+
+    h1{
+        font-family: $font2;
+    }
 
     button {
         background-color: $colorred3;
@@ -653,8 +679,8 @@ video {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.02);
-        transition: all 0.3s;
+        transform: scale(1.03);
+        transition: all 0.2s;
     }
 
     h6 {
@@ -663,7 +689,9 @@ video {
     }
 
     h5 {
-        font-size: 18px !important;
+        font-size: 17px !important;
+        font-family: $font2;
+        font-weight: 600;
     }
 
 }
@@ -1055,7 +1083,7 @@ footer {
 
 .titfichapartido1 {
     font-family: $font1;
-    background-image: linear-gradient(rgba(180, 5, 5, 0.664), rgba(0, 0, 0, 0.945)), url(./img/estadio\ bragantino.jpg);
+    background-image: linear-gradient(rgba(61, 3, 3, 0.205), rgba(0, 0, 0, 0.945)), url(./img/estadio\ uno.jpg);
     background-size:cover;
     background-position: center;
     color: $colorwhite2;
@@ -1089,39 +1117,14 @@ footer {
 }
 
 .titfichapartido2 {
-    font-family: $font1;
-    background-image: linear-gradient(rgba(255, 9, 9, 0.384), rgb(0, 0, 0)), url(./img/estadio\ uno.jpg);
-    background-size:cover;
-    background-position: center;
-    color: $colorwhite2;
-    height: auto;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.521);
-    padding-top: 20px;
-    margin-bottom: 35px;
-    width: 100%;
+    @extend .titfichapartido1;
+    background-image: linear-gradient(rgba(34, 9, 255, 0.247), rgb(0, 0, 0)), url(./img/estadio\ tacuary.jpg);
+}
 
-    animation-duration: 1s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
 
-    h1 {
-        font-weight: bolder;
-        font-style: italic;
-        font-size: 90px;
-        text-align: center;
-        text-shadow: 2px 3px 3px black;
-    }
-
-    h5 {
-        font-weight: 100;
-        font-size: 18px;
-        text-align: center;
-        text-shadow: 2px 3px 3px black;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    
+.titfichapartido3 {
+    @extend .titfichapartido1;
+    background-image: linear-gradient(rgba(59, 2, 2, 0.247), rgb(0, 0, 0)), url(./img/estadio\ isntituto.png);
 }
 
 .btn-per{
@@ -1145,7 +1148,7 @@ footer {
     font-weight: 900;
     font-style: italic;
     font-size: 30px;
-    padding: 45px 0 20px 15px;
+    padding: 45px 0 10px 0px;
 
 }
 
@@ -1222,70 +1225,70 @@ footer {
         color: $colorwhite2;
     }
 
-    @extend .desc1
+    @extend .desc1;
 }
 
 .img1not {
     grid-area: img1not ;
-    // background-color: #660708;
-    background-image: url(./img/noticia1.jpg);
+    background-color: #818181;
+    // background-image: url(./img/noticia1.jpg);
 }
 
 .img2not {
     grid-area: img2not ;
-    // background-color: #4adf0f;
-    background-image: url(./img/noticia2.jpg);
+    background-color: #818181;
+    // background-image: url(./img/noticia2.jpg);
 }
 
 
 .img3not {
     grid-area: img3not ;
-    // background-color: #09acdd;
-    background-image: url(./img/noticia3.jpg);
+    background-color: #818181;
+    // background-image: url(./img/noticia3.jpg);
 }
 
 .img4not {
     grid-area: img4not ;
     // background-color: #0a4557;
-    background-image: url(./img/noticia4.jpg);
+    background-image: url(./img/NoticiaHome7.jpg);
 }
 
 .img5not {
     grid-area: img5not;
     // background-color: #f50ac2;
-    background-image: url(./img/noticia6.jpg);
+    background-image: url(./img/NoticiaHome4.jpg);
 }
 
 .img6not {
     grid-area: img6not;
     // background-color: #d1cbd0;
-    background-image: url(./img/noticia7.jpg);
-    background-position-x: 10%;
+    background-image: url(./img/NoticiaHome5.jpg);
+    background-position-x: 70%;
 }
 
 .img7not {
     grid-area: img7not;
     // background-color: #ff0e0e;
-    background-image: url(./img/noticia8.jpg);
+    background-image: url(./img/NoticiaHome6.jpg);
     background-position-x: 10%;
 }
 
 .img8not {
     grid-area: img8not;
     // background-color: #580546;
-    background-image: url(./img/noticia9.jpg);
+    background-image: url(./img/NoticiaHome8.jpg);
 }
 
 .img9not {
     grid-area: img9not;
     // background-color: #580546;
-    background-image: url(./img/noticia10.jpg);
+    background-image: url(./img/NoticiaHome9.jpg);
 }
 
 .img10not {
     grid-area: img10not;
     // background-color: #000000;
-    background-image: url(./img/sappa.jpg);
+    background-image: url(./img/NoticiaHome10.jpg);
 }
 
 
@@ -1309,7 +1312,7 @@ footer {
         color: red($color: #000000);
     }
     @extend .titposiciones;
-    background-image: linear-gradient(rgba(114, 4, 4, 0.452), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
+    background-image: linear-gradient(rgba(34, 32, 32, 0.452), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
     background-size:contain;
 
     a{
@@ -1532,7 +1535,7 @@ footer {
     @extend .content-arqueros;
 
     h2{
-        color: $colorwhite2;
+        color: $colorblackgrey;
     }
     padding-bottom: 150px;
 }
@@ -1873,13 +1876,6 @@ footer {
         }
     }
 
-    .content-defensores{
-    
-        h2{
-            color: $colorblackgrey;
-        }
-    }
-
 
 }
 
@@ -1951,7 +1947,7 @@ footer {
     .titnoticias{
         background-size:cover;
         h1{
-            font-size: 17px;
+            font-size: 23px;
             text-align: center;
             padding-bottom: 20px;
         }
@@ -2044,21 +2040,6 @@ footer {
             text-align: center;
         }
     }
-
-    .content-defensores{
-    
-        h2{
-            color: $colorblackgrey;
-        }
-    }
-
-    .content-arqueros{
-    
-        h2{
-            color: $colorblackgrey;
-        }
-    }
-
 
 }
 

@@ -285,7 +285,7 @@ video {
   text-align: center;
 }
 .sec h2 {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 550;
   padding: 5px;
 }
@@ -325,6 +325,9 @@ video {
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
+}
+.desc1 h1, .desc1not h1, .desc2not h1, .desc3not h1, .desc4not h1, .desc5not h1, .desc6not h1, .desc7not h1, .desc8not h1, .desc9not h1, .desc10not h1 {
+  font-family: "Cabin", sans-serif;
 }
 .desc1 button, .desc1not button, .desc2not button, .desc3not button, .desc4not button, .desc5not button, .desc6not button, .desc7not button, .desc8not button, .desc9not button, .desc10not button {
   background-color: #BA181B;
@@ -368,6 +371,9 @@ video {
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
+.desc2 h1 {
+  font-family: "Cabin", sans-serif;
+}
 .desc2 button {
   background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -392,6 +398,9 @@ video {
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
 }
+.desc3 h1 {
+  font-family: "Cabin", sans-serif;
+}
 .desc3 button {
   background-color: #BA181B;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -406,7 +415,7 @@ video {
 
 .img3 {
   grid-area: img3;
-  background-image: url(img/NoticiaHome3.jpg);
+  background-color: #B1A7A6;
 }
 
 /* ------------ CONTENEDOR 1 IMG4 ------------ */
@@ -415,6 +424,9 @@ video {
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
+}
+.desc4 h1 {
+  font-family: "Cabin", sans-serif;
 }
 .desc4 button {
   background-color: #BA181B;
@@ -430,7 +442,7 @@ video {
 
 .img4 {
   grid-area: img4;
-  background-image: url(img/noticia4.jpg);
+  background-image: url(img/NoticiaHome4.jpg);
 }
 
 /* ------------ CONTENEDOR 1 IMG5 ------------ */
@@ -439,6 +451,9 @@ video {
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
+}
+.desc5 h1 {
+  font-family: "Cabin", sans-serif;
 }
 .desc5 button {
   background-color: #BA181B;
@@ -463,6 +478,9 @@ video {
   margin-top: 230px;
   background-color: rgba(0, 0, 0, 0.658);
   padding: 10px;
+}
+.desc6 h1 {
+  font-family: "Cabin", sans-serif;
 }
 .desc6 button {
   background-color: #BA181B;
@@ -511,15 +529,17 @@ video {
 }
 .card:hover {
   cursor: pointer;
-  transform: scale(1.02);
-  transition: all 0.3s;
+  transform: scale(1.03);
+  transition: all 0.2s;
 }
 .card h6 {
   color: #BA181B;
   font-size: large;
 }
 .card h5 {
-  font-size: 18px !important;
+  font-size: 17px !important;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
 }
 
 .camisetabutton {
@@ -832,9 +852,9 @@ footer .redes img {
   height: auto;
 }
 
-.titfichapartido1 {
+.titfichapartido1, .titfichapartido3, .titfichapartido2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-image: linear-gradient(rgba(180, 5, 5, 0.664), rgba(0, 0, 0, 0.945)), url(./img/estadio\ bragantino.jpg);
+  background-image: linear-gradient(rgba(61, 3, 3, 0.205), rgba(0, 0, 0, 0.945)), url(./img/estadio\ uno.jpg);
   background-size: cover;
   background-position: center;
   color: #FFFFFF;
@@ -847,14 +867,14 @@ footer .redes img {
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
-.titfichapartido1 h1 {
+.titfichapartido1 h1, .titfichapartido3 h1, .titfichapartido2 h1 {
   font-weight: bolder;
   font-style: italic;
   font-size: 90px;
   text-align: center;
   text-shadow: 2px 3px 3px black;
 }
-.titfichapartido1 h5 {
+.titfichapartido1 h5, .titfichapartido3 h5, .titfichapartido2 h5 {
   font-weight: 100;
   font-size: 18px;
   text-align: center;
@@ -864,34 +884,11 @@ footer .redes img {
 }
 
 .titfichapartido2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-image: linear-gradient(rgba(255, 9, 9, 0.384), rgb(0, 0, 0)), url(./img/estadio\ uno.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #FFFFFF;
-  height: auto;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.521);
-  padding-top: 20px;
-  margin-bottom: 35px;
-  width: 100%;
-  animation-duration: 1s;
-  animation-name: aparecer;
-  animation-iteration-count: 1;
+  background-image: linear-gradient(rgba(34, 9, 255, 0.247), rgb(0, 0, 0)), url(./img/estadio\ tacuary.jpg);
 }
-.titfichapartido2 h1 {
-  font-weight: bolder;
-  font-style: italic;
-  font-size: 90px;
-  text-align: center;
-  text-shadow: 2px 3px 3px black;
-}
-.titfichapartido2 h5 {
-  font-weight: 100;
-  font-size: 18px;
-  text-align: center;
-  text-shadow: 2px 3px 3px black;
-  text-transform: uppercase;
-  margin: 0;
+
+.titfichapartido3 {
+  background-image: linear-gradient(rgba(59, 2, 2, 0.247), rgb(0, 0, 0)), url(./img/estadio\ isntituto.png);
 }
 
 .btn-per {
@@ -917,7 +914,7 @@ footer .redes img {
   font-weight: 900;
   font-style: italic;
   font-size: 30px;
-  padding: 45px 0 20px 15px;
+  padding: 45px 0 10px 0px;
 }
 
 .cardpartficha {
@@ -979,59 +976,59 @@ footer .redes img {
 
 .img1not {
   grid-area: img1not;
-  background-image: url(./img/noticia1.jpg);
+  background-color: #818181;
 }
 
 .img2not {
   grid-area: img2not;
-  background-image: url(./img/noticia2.jpg);
+  background-color: #818181;
 }
 
 .img3not {
   grid-area: img3not;
-  background-image: url(./img/noticia3.jpg);
+  background-color: #818181;
 }
 
 .img4not {
   grid-area: img4not;
-  background-image: url(./img/noticia4.jpg);
+  background-image: url(./img/NoticiaHome7.jpg);
 }
 
 .img5not {
   grid-area: img5not;
-  background-image: url(./img/noticia6.jpg);
+  background-image: url(./img/NoticiaHome4.jpg);
 }
 
 .img6not {
   grid-area: img6not;
-  background-image: url(./img/noticia7.jpg);
-  background-position-x: 10%;
+  background-image: url(./img/NoticiaHome5.jpg);
+  background-position-x: 70%;
 }
 
 .img7not {
   grid-area: img7not;
-  background-image: url(./img/noticia8.jpg);
+  background-image: url(./img/NoticiaHome6.jpg);
   background-position-x: 10%;
 }
 
 .img8not {
   grid-area: img8not;
-  background-image: url(./img/noticia9.jpg);
+  background-image: url(./img/NoticiaHome8.jpg);
 }
 
 .img9not {
   grid-area: img9not;
-  background-image: url(./img/noticia10.jpg);
+  background-image: url(./img/NoticiaHome9.jpg);
 }
 
 .img10not {
   grid-area: img10not;
-  background-image: url(./img/sappa.jpg);
+  background-image: url(./img/NoticiaHome10.jpg);
 }
 
 .titnoticias {
   height: 400px;
-  background-image: linear-gradient(rgba(114, 4, 4, 0.452), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
+  background-image: linear-gradient(rgba(34, 32, 32, 0.452), rgb(0, 0, 0)), url(./img/noticiamatchday.jpg);
   background-size: contain;
 }
 .titnoticias h1 {
@@ -1213,7 +1210,7 @@ footer .redes img {
   padding-bottom: 150px;
 }
 .content-delanteros h2 {
-  color: #FFFFFF;
+  color: #161A1D;
 }
 
 .content {
@@ -1420,9 +1417,6 @@ footer .redes img {
     padding: 0;
     text-align: center;
   }
-  .content-defensores h2, .content-mediocampistas h2 {
-    color: #161A1D;
-  }
 }
 @media only screen and (max-width: 900px) and (min-width: 320px) {
   .cont.cont1 {
@@ -1458,7 +1452,7 @@ footer .redes img {
     background-size: cover;
   }
   .titnoticias h1 {
-    font-size: 17px;
+    font-size: 23px;
     text-align: center;
     padding-bottom: 20px;
   }
@@ -1517,12 +1511,6 @@ footer .redes img {
     font-style: normal;
     padding: 0;
     text-align: center;
-  }
-  .content-defensores h2, .content-mediocampistas h2 {
-    color: #161A1D;
-  }
-  .content-arqueros h2, .content-defensores h2, .content-mediocampistas h2, .content-delanteros h2 {
-    color: #161A1D;
   }
 }
 @media only screen and (max-width: 650px) and (min-width: 320px) {
