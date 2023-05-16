@@ -343,7 +343,8 @@ video {
 
 .img1 {
   grid-area: img1;
-  background-color: #B1A7A6;
+  background-image: url(img/noticiamatchday.jpg);
+  background-position-x: 35%;
 }
 
 .img h1, .img6 h1, .img5 h1, .img4 h1, .img3 h1, .img2 h1 {
@@ -388,7 +389,7 @@ video {
 
 .img2 {
   grid-area: img2;
-  background-color: #B1A7A6;
+  background-image: url(img/NoticiaHome2.jpg);
 }
 
 /* ------------ CONTENEDOR 1 IMG3 ------------ */
@@ -415,7 +416,7 @@ video {
 
 .img3 {
   grid-area: img3;
-  background-color: #B1A7A6;
+  background-image: url(img/NoticiaHome3.jpg);
 }
 
 /* ------------ CONTENEDOR 1 IMG4 ------------ */
@@ -977,16 +978,19 @@ footer .redes img {
 .img1not {
   grid-area: img1not;
   background-color: #818181;
+  background-image: url(./img/NoticiaHome1.jpg);
 }
 
 .img2not {
   grid-area: img2not;
   background-color: #818181;
+  background-image: url(./img/NoticiaHome2.jpg);
 }
 
 .img3not {
   grid-area: img3not;
   background-color: #818181;
+  background-image: url(./img/NoticiaHome3.jpg);
 }
 
 .img4not {
@@ -1138,6 +1142,26 @@ footer .redes img {
   font-style: italic;
 }
 
+.galeriamatchday {
+  margin-top: 10px;
+}
+.galeriamatchday img {
+  filter: grayscale(40%);
+}
+.galeriamatchday img:hover {
+  transform: scale(1.07);
+  transition: all 0.3s;
+  filter: contrast(100%);
+  cursor: pointer;
+}
+
+.cancha imghover {
+  transform: scale(1.07);
+  transition: all 0.3s;
+  filter: contrast(100%);
+  cursor: pointer;
+}
+
 /*  ------------  ------------ */
 /*  ------------  ------------ */
 /*  ------------  ------------ */
@@ -1172,7 +1196,7 @@ footer .redes img {
   text-transform: uppercase;
   color: #FFFFFF;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
   font-size: 65px;
   padding: 40px 0 15px 60px;

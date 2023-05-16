@@ -450,8 +450,8 @@ video {
 
 .img1 {
     grid-area: img1;
-    // background-image: url(img/NoticiaHome2.jpg);
-    background-color: $colorgrey1;
+    background-image: url(img/noticiamatchday.jpg) ;
+    background-position-x: 35%;
 }
 
 .img {
@@ -506,8 +506,8 @@ video {
 
 .img2 {
     grid-area: img2;
-    // background-image: url(img/noticia2.jpg);
-    background-color: $colorgrey1;
+    background-image: url(img/NoticiaHome2.jpg);
+    // background-color: $colorgrey1;
 
     @extend .img;
 }
@@ -540,8 +540,8 @@ video {
 
 .img3 {
     grid-area: img3;
-    background-color: $colorgrey1;
-    // background-image: url(img/NoticiaHome7.jpg);
+    // background-color: $colorgrey1;
+    background-image: url(img/NoticiaHome3.jpg);
 
     @extend .img;
 }
@@ -1231,20 +1231,20 @@ footer {
 .img1not {
     grid-area: img1not ;
     background-color: #818181;
-    // background-image: url(./img/noticia1.jpg);
+    background-image: url(./img/NoticiaHome1.jpg);
 }
 
 .img2not {
     grid-area: img2not ;
     background-color: #818181;
-    // background-image: url(./img/noticia2.jpg);
+    background-image: url(./img/NoticiaHome2.jpg);
 }
 
 
 .img3not {
     grid-area: img3not ;
     background-color: #818181;
-    // background-image: url(./img/noticia3.jpg);
+    background-image: url(./img/NoticiaHome3.jpg);
 }
 
 .img4not {
@@ -1442,6 +1442,32 @@ footer {
 }
 
 
+.galeriamatchday{
+    margin-top: 10px;
+
+    img{
+        filter: grayscale(40%);
+        &:hover {
+            transform: scale(1.07);
+            transition: all 0.3s;
+            filter: contrast(100%);
+            cursor: pointer;
+        }
+    }    
+}
+
+.cancha img{
+    &hover{
+        transform: scale(1.07);
+            transition: all 0.3s;
+            filter: contrast(100%);
+            cursor: pointer;
+    }
+}
+
+
+
+
 
 
 
@@ -1486,7 +1512,7 @@ footer {
         text-transform: uppercase;
         color: $colorwhite2;
         font-family: $font1;
-        font-weight: 900;
+        font-weight: 600;
         font-style: normal;
         font-size: 65px;
         padding: 40px 0 15px 60px;
